@@ -49,8 +49,11 @@ Few other technical arguments that can be passed are given in the following. In 
 ## Installing Rosette/Racket and Sketch
 
 First install the Racket with following commands:
+
 	`sudo add-apt-repository ppa:plt/racket`
+
 	`sudo apt update`
+
 	`sudo apt-get install racket`
 
 Now, install Rosette:
