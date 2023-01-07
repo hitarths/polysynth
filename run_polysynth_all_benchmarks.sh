@@ -9,7 +9,7 @@ echo "Running $cmd..."
 output=$(eval $cmd || echo "Timeout")
 
 
-if [ "$output" == "Timeout" ];
+if [[ "$output" == "Timeout" ]];
 then
 	echo "$name, $output" >> $OUTPUT_FILE
 else
