@@ -63,9 +63,8 @@ Now, install Rosette:
 
 Now, you should be able to run racket with command `racket`.
 
-For Sketch, we have already provided the application. But, you still have to install Java environment using the following command:
+For setting up Sketch, please follow the instructions on the link: https://github.com/asolarlez/sketch-frontend/wiki.
 
-		sudo apt-get install default-jre -y
 
 ## How to run Polysynth, Rosette and Sketch on the benchmarks?
 
