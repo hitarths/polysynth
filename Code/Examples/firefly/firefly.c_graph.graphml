@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="text" for="edge" attr.name="text" attr.type="string" />
+  <key id="name" for="node" attr.name="name" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="0">
+      <data key="name">invalid &gt;= 1</data>
+    </node>
+    <node id="1">
+      <data key="name" />
+    </node>
+    <node id="2">
+      <data key="name" />
+    </node>
+    <node id="3">
+      <data key="name" />
+    </node>
+    <node id="4">
+      <data key="name" />
+    </node>
+    <node id="5">
+      <data key="name">(((exclusive &gt;= 0 and dirty &gt;= 0) and (shared &gt;= 0 and invalid &gt;= 0)) and ((dirty + exclusive) + (shared + invalid)) == total)</data>
+    </node>
+    <node id="6">
+      <data key="name" />
+    </node>
+    <node id="7">
+      <data key="name" />
+    </node>
+    <node id="8">
+      <data key="name" />
+    </node>
+    <node id="9">
+      <data key="name">ndifblock</data>
+    </node>
+    <node id="10">
+      <data key="name" />
+    </node>
+    <node id="11">
+      <data key="name" />
+    </node>
+    <node id="12">
+      <data key="name">ndifblock</data>
+    </node>
+    <node id="13">
+      <data key="name" />
+    </node>
+    <node id="14">
+      <data key="name" />
+    </node>
+    <node id="15">
+      <data key="name" />
+    </node>
+    <node id="16">
+      <data key="name">ndifblock</data>
+    </node>
+    <node id="17">
+      <data key="name" />
+    </node>
+    <node id="18">
+      <data key="name" />
+    </node>
+    <node id="19">
+      <data key="name" />
+    </node>
+    <node id="20">
+      <data key="name">ndifblock</data>
+    </node>
+    <node id="21">
+      <data key="name" />
+    </node>
+    <node id="22">
+      <data key="name" />
+    </node>
+    <node id="23">
+      <data key="name" />
+    </node>
+    <node id="24">
+      <data key="name">ndifblock</data>
+    </node>
+    <node id="25">
+      <data key="name" />
+    </node>
+    <node id="26">
+      <data key="name" />
+    </node>
+    <node id="27">
+      <data key="name">ndifblock</data>
+    </node>
+    <node id="28">
+      <data key="name" />
+    </node>
+    <node id="29">
+      <data key="name" />
+    </node>
+    <node id="30">
+      <data key="name">ndifblock</data>
+    </node>
+    <node id="31">
+      <data key="name" />
+    </node>
+    <node id="32">
+      <data key="name" />
+    </node>
+    <node id="33">
+      <data key="name" />
+    </node>
+    <node id="34">
+      <data key="name" />
+    </node>
+    <node id="35">
+      <data key="name" />
+    </node>
+    <node id="36">
+      <data key="name">((exclusive &gt;= 0 and dirty &gt;= 0) and (shared &gt;= 0 and invalid &gt;= 0))</data>
+    </node>
+    <edge source="0" target="1" id="exclusive = 0">
+      <data key="text">exclusive = 0</data>
+    </edge>
+    <edge source="1" target="2" id="dirty = 0">
+      <data key="text">dirty = 0</data>
+    </edge>
+    <edge source="2" target="3" id="shared = 0">
+      <data key="text">shared = 0</data>
+    </edge>
+    <edge source="3" target="4" id="total = invalid">
+      <data key="text">total = invalid</data>
+    </edge>
+    <edge source="4" target="5" id="">
+      <data key="text" />
+    </edge>
+    <edge source="5" target="6" id="1 &gt;= 0">
+      <data key="text">1 &gt;= 0</data>
+    </edge>
+    <edge source="5" target="8" id="">
+      <data key="text" />
+    </edge>
+    <edge source="5" target="35" id="Not(1 &gt;= 0)">
+      <data key="text">Not(1 &gt;= 0)</data>
+    </edge>
+    <edge source="6" target="7" id="">
+      <data key="text" />
+    </edge>
+    <edge source="7" target="9" id="(((dirty == 0 and shared == 0) and exclusive == 0) and invalid &gt;= 1)">
+      <data key="text">(((dirty == 0 and shared == 0) and exclusive == 0) and invalid &gt;= 1)</data>
+    </edge>
+    <edge source="7" target="12" id="(invalid &gt;= 1 and dirty &gt;= 1)">
+      <data key="text">(invalid &gt;= 1 and dirty &gt;= 1)</data>
+    </edge>
+    <edge source="7" target="16" id="(invalid &gt;= 1 and shared &gt;= 1)">
+      <data key="text">(invalid &gt;= 1 and shared &gt;= 1)</data>
+    </edge>
+    <edge source="7" target="20" id="(invalid &gt;= 1 and exclusive &gt;= 1)">
+      <data key="text">(invalid &gt;= 1 and exclusive &gt;= 1)</data>
+    </edge>
+    <edge source="7" target="24" id="exclusive &gt;= 1">
+      <data key="text">exclusive &gt;= 1</data>
+    </edge>
+    <edge source="7" target="27" id="shared == 1">
+      <data key="text">shared == 1</data>
+    </edge>
+    <edge source="7" target="30" id="invalid &gt;= 1">
+      <data key="text">invalid &gt;= 1</data>
+    </edge>
+    <edge source="8" target="11" id="">
+      <data key="text" />
+    </edge>
+    <edge source="8" target="15" id="">
+      <data key="text" />
+    </edge>
+    <edge source="8" target="19" id="">
+      <data key="text" />
+    </edge>
+    <edge source="8" target="23" id="">
+      <data key="text" />
+    </edge>
+    <edge source="8" target="26" id="">
+      <data key="text" />
+    </edge>
+    <edge source="8" target="29" id="">
+      <data key="text" />
+    </edge>
+    <edge source="8" target="34" id="">
+      <data key="text" />
+    </edge>
+    <edge source="9" target="10" id="invalid = (invalid - 1)">
+      <data key="text">invalid = (invalid - 1)</data>
+    </edge>
+    <edge source="10" target="11" id="exclusive = (_a_0_)*(shared)+(_a_1_)*(1)+(_a_2_)*(exclusive)+(_a_3_)*(invalid)+(_a_4_)*(dirty)">
+      <data key="text">exclusive = (_a_0_)*(shared)+(_a_1_)*(1)+(_a_2_)*(exclusive)+(_a_3_)*(invalid)+(_a_4_)*(dirty)</data>
+    </edge>
+    <edge source="12" target="13" id="invalid = (invalid - 1)">
+      <data key="text">invalid = (invalid - 1)</data>
+    </edge>
+    <edge source="13" target="14" id="dirty = (dirty - 1)">
+      <data key="text">dirty = (dirty - 1)</data>
+    </edge>
+    <edge source="14" target="15" id="shared = (_a_5_)*(shared)+(_a_6_)*(1)+(_a_7_)*(exclusive)+(_a_8_)*(invalid)+(_a_9_)*(dirty)">
+      <data key="text">shared = (_a_5_)*(shared)+(_a_6_)*(1)+(_a_7_)*(exclusive)+(_a_8_)*(invalid)+(_a_9_)*(dirty)</data>
+    </edge>
+    <edge source="16" target="17" id="invalid = (invalid - 1)">
+      <data key="text">invalid = (invalid - 1)</data>
+    </edge>
+    <edge source="17" target="18" id="shared = (_a_10_)*(shared)+(_a_11_)*(1)+(_a_12_)*(exclusive)+(_a_13_)*(invalid)+(_a_14_)*(dirty)">
+      <data key="text">shared = (_a_10_)*(shared)+(_a_11_)*(1)+(_a_12_)*(exclusive)+(_a_13_)*(invalid)+(_a_14_)*(dirty)</data>
+    </edge>
+    <edge source="18" target="19" id="exclusive = 0">
+      <data key="text">exclusive = 0</data>
+    </edge>
+    <edge source="20" target="21" id="invalid = (invalid - 1)">
+      <data key="text">invalid = (invalid - 1)</data>
+    </edge>
+    <edge source="21" target="22" id="shared = (_a_15_)*(shared)+(_a_16_)*(1)+(_a_17_)*(exclusive)+(_a_18_)*(invalid)+(_a_19_)*(dirty)">
+      <data key="text">shared = (_a_15_)*(shared)+(_a_16_)*(1)+(_a_17_)*(exclusive)+(_a_18_)*(invalid)+(_a_19_)*(dirty)</data>
+    </edge>
+    <edge source="22" target="23" id="exclusive = 0">
+      <data key="text">exclusive = 0</data>
+    </edge>
+    <edge source="24" target="25" id="exclusive = (_a_20_)*(shared)+(_a_21_)*(1)+(_a_22_)*(exclusive)+(_a_23_)*(invalid)+(_a_24_)*(dirty)">
+      <data key="text">exclusive = (_a_20_)*(shared)+(_a_21_)*(1)+(_a_22_)*(exclusive)+(_a_23_)*(invalid)+(_a_24_)*(dirty)</data>
+    </edge>
+    <edge source="25" target="26" id="dirty = (dirty + 1)">
+      <data key="text">dirty = (dirty + 1)</data>
+    </edge>
+    <edge source="27" target="28" id="shared = (shared - 1)">
+      <data key="text">shared = (shared - 1)</data>
+    </edge>
+    <edge source="28" target="29" id="exclusive = (_a_25_)*(shared)+(_a_26_)*(1)+(_a_27_)*(exclusive)+(_a_28_)*(invalid)+(_a_29_)*(dirty)">
+      <data key="text">exclusive = (_a_25_)*(shared)+(_a_26_)*(1)+(_a_27_)*(exclusive)+(_a_28_)*(invalid)+(_a_29_)*(dirty)</data>
+    </edge>
+    <edge source="30" target="31" id="invalid = (_a_30_)*(shared)+(_a_31_)*(1)+(_a_32_)*(exclusive)+(_a_33_)*(invalid)+(_a_34_)*(dirty)">
+      <data key="text">invalid = (_a_30_)*(shared)+(_a_31_)*(1)+(_a_32_)*(exclusive)+(_a_33_)*(invalid)+(_a_34_)*(dirty)</data>
+    </edge>
+    <edge source="31" target="32" id="exclusive = 0">
+      <data key="text">exclusive = 0</data>
+    </edge>
+    <edge source="32" target="33" id="shared = 0">
+      <data key="text">shared = 0</data>
+    </edge>
+    <edge source="33" target="34" id="dirty = 1">
+      <data key="text">dirty = 1</data>
+    </edge>
+    <edge source="35" target="36" id="">
+      <data key="text" />
+    </edge>
+  </graph>
+</graphml>

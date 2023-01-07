@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="text" for="edge" attr.name="text" attr.type="string" />
+  <key id="name" for="node" attr.name="name" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="0">
+      <data key="name">N &gt;= 0</data>
+    </node>
+    <node id="1">
+      <data key="name" />
+    </node>
+    <node id="2">
+      <data key="name" />
+    </node>
+    <node id="3">
+      <data key="name">(0 == (_a_0_)*(1)+(_a_1_)*(n**8*s)+(_a_2_)*(n**3*s**5)+(_a_3_)*(n**5*s**4)+(_a_4_)*(n**4*s**4)+(_a_5_)*(n**2*s**6)+(_a_6_)*(n*s**3)+(_a_7_)*(s**8)+(_a_8_)*(n**2*s**7)+(_a_9_)*(n**7*s**2)+(_a_10_)*(n**10*s)+(_a_11_)*(n**2*s**2)+(_a_12_)*(n**9*s**2)+(_a_13_)*(n**7)+(_a_14_)*(n)+(_a_15_)*(n**6*s)+(_a_16_)*(n**4*s**7)+(_a_17_)*(n**3*s**3)+(_a_18_)*(s**10)+(_a_19_)*(s**7)+(_a_20_)*(n**7*s)+(_a_21_)*(n**6*s**4)+(_a_22_)*(n**5*s**3)+(_a_23_)*(n*s**10)+(_a_24_)*(n**4*s**3)+(_a_25_)*(n**2*s)+(_a_26_)*(n**9)+(_a_27_)*(n**2*s**8)+(_a_28_)*(n*s**5)+(_a_29_)*(n**3*s)+(_a_30_)*(n**2*s**9)+(_a_31_)*(n**7*s**4)+(_a_32_)*(n*s**6)+(_a_33_)*(s**3)+(_a_34_)*(s**9)+(_a_35_)*(n**2*s**5)+(_a_36_)*(n**8*s**3)+(_a_37_)*(n**2)+(_a_38_)*(n**11)+(_a_39_)*(n**8)+(_a_40_)*(n*s**2)+(_a_41_)*(n**6*s**3)+(_a_42_)*(n**9*s)+(_a_43_)*(s**5)+(_a_44_)*(n**5*s**5)+(_a_45_)*(s)+(_a_46_)*(s**2)+(_a_47_)*(n**3*s**6)+(_a_48_)*(n**4*s**5)+(_a_49_)*(n**4*s)+(_a_50_)*(s**11)+(_a_51_)*(n**5*s**6)+(_a_52_)*(n**4)+(_a_53_)*(n**3*s**7)+(_a_54_)*(n**4*s**6)+(_a_55_)*(n**5*s)+(_a_56_)*(n**7*s**3)+(_a_57_)*(n*s)+(_a_58_)*(n**10)+(_a_59_)*(n*s**8)+(_a_60_)*(n**3*s**2)+(_a_61_)*(n**2*s**3)+(_a_62_)*(n**5)+(_a_63_)*(n**5*s**2)+(_a_64_)*(n*s**9)+(_a_65_)*(s**4)+(_a_66_)*(n**4*s**2)+(_a_67_)*(n*s**4)+(_a_68_)*(n**6)+(_a_69_)*(n**3)+(_a_70_)*(n**6*s**5)+(_a_71_)*(n**3*s**8)+(_a_72_)*(n**2*s**4)+(_a_73_)*(n**8*s**2)+(_a_74_)*(s**6)+(_a_75_)*(n**3*s**4)+(_a_76_)*(n*s**7)+(_a_77_)*(n**6*s**2) and n &lt;= (N + 1))</data>
+    </node>
+    <node id="4">
+      <data key="name" />
+    </node>
+    <node id="5">
+      <data key="name" />
+    </node>
+    <node id="6">
+      <data key="name" />
+    </node>
+    <node id="7">
+      <data key="name" />
+    </node>
+    <node id="8">
+      <data key="name">1 &gt;= 0</data>
+    </node>
+    <edge source="0" target="1" id="s = 0">
+      <data key="text">s = 0</data>
+    </edge>
+    <edge source="1" target="2" id="n = 0">
+      <data key="text">n = 0</data>
+    </edge>
+    <edge source="2" target="3" id="">
+      <data key="text" />
+    </edge>
+    <edge source="3" target="4" id="n &lt;= N">
+      <data key="text">n &lt;= N</data>
+    </edge>
+    <edge source="3" target="6" id="">
+      <data key="text" />
+    </edge>
+    <edge source="3" target="7" id="Not(n &lt;= N)">
+      <data key="text">Not(n &lt;= N)</data>
+    </edge>
+    <edge source="4" target="5" id="s = (s + ((((n * n) * (n * n)) * (n * n)) * ((n * n) * (n * n))))">
+      <data key="text">s = (s + ((((n * n) * (n * n)) * (n * n)) * ((n * n) * (n * n))))</data>
+    </edge>
+    <edge source="5" target="6" id="n = (n + 1)">
+      <data key="text">n = (n + 1)</data>
+    </edge>
+    <edge source="7" target="8" id="">
+      <data key="text" />
+    </edge>
+  </graph>
+</graphml>

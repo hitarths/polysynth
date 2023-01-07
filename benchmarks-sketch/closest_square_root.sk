@@ -1,0 +1,12 @@
+harness void closest_square_root(int a){
+   assume(a>=1);
+   int x = a/2;
+   int r = 0;
+   while(x>=r)
+   {
+      assert(a == ??*x +  ?? + r*r - r && x >=0);
+      x = ??*x + ??*r  + ??;
+      r = r + 1;
+   }
+   assert(r*r - r >= a-2*r && r*r - r <=  a); 
+}

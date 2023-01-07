@@ -1,0 +1,24 @@
+harness void friction(float e, float t, float move){
+    assume(t>=0.0);
+    float  f = move*?? + ??;
+    float g = 9.8; 
+    float nuk = 0.2;
+    float nus  = 0.3;
+    float sin = 0.5;
+    float cos = 0.86;
+    float l = 10.0;
+    if(sin >=  nus*cos)
+    {
+        move = 1.0;
+        t = f;
+        e = t*t*g*sin - g*nuk*cos - 2.0*l;
+    }
+    else
+    {
+        move = 0.0;
+        e = 0.0;
+        t = f;
+    }
+    assert(e==0.0 && t>=0.0);
+}
+

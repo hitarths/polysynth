@@ -1,0 +1,14 @@
+harness void if_else_trivial(int x, int y){
+	assume(x>=0);
+	int z = 0;
+	y = y - 16;
+	if(y>= 0)
+	{
+		z = x + y;
+	}
+	if(y<0)
+	{
+		z = x + y + y*(??) + ??;
+	}
+	assert(z>=0);
+}

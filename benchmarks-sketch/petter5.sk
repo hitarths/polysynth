@@ -1,0 +1,14 @@
+harness void petter5(int N)
+{
+	assume(N>=0);
+	int s = 0;
+	int n = 0;
+	while(n!=N)
+	{
+		assert((s == (((n*n)*(n*n))*(n*n)) && (n <= (N+1))) );
+		s = s + n*n*n*n*n*?? + n*n*n*n*?? + n*n*n*?? + n*n*?? + n*?? + ??;
+		n = n+1;
+	}
+	assert(1>=0);
+}
+

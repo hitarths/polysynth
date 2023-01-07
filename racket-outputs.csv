@@ -1,0 +1,10 @@
+benchmark, time
+archimedes_principle_real.rkt
+archimedes_principle_real.rkt, 386.75390625
+closes_square_root.rkt
+closes_square_root.rkt, 127.357177734375
+closest_cube_root_real.rkt
+closest_cube_root_real.rkt, Timeout
+cohendiv.rkt
+cohendiv.rkt, 111.30810546875
+consequitive_cubes.rkt

@@ -1,0 +1,14 @@
+harness void floor_square_root(int n){
+    assume(n>=0);
+    int a = 0;
+    int su = 1;
+    int t = 1;
+    while(su<=n)
+    {
+        assert((a*a <=n && t == 2*a +1 ) && su == (a+1)*(a+1)); 
+        a = a+1;
+        t = ??*t + ??;
+        su = ??*su + ??*t + ??;
+    }
+    assert(a*a<=n);
+}

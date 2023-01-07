@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="text" for="edge" attr.name="text" attr.type="string" />
+  <key id="name" for="node" attr.name="name" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="0">
+      <data key="name">(invalid &gt;= 1 and owned &gt;= 1)</data>
+    </node>
+    <node id="1">
+      <data key="name" />
+    </node>
+    <node id="2">
+      <data key="name" />
+    </node>
+    <node id="3">
+      <data key="name" />
+    </node>
+    <node id="4">
+      <data key="name" />
+    </node>
+    <node id="5">
+      <data key="name">(((modified &gt;= 0 and shared &gt;= 0) and ((exclusive &gt;= 0 and invalid &gt;= 0) and owned &gt;= 0)) and (((modified + shared) + (exclusive + invalid)) + owned) == total)</data>
+    </node>
+    <node id="6">
+      <data key="name" />
+    </node>
+    <node id="7">
+      <data key="name" />
+    </node>
+    <node id="8">
+      <data key="name" />
+    </node>
+    <node id="9">
+      <data key="name">ndifblock</data>
+    </node>
+    <node id="10">
+      <data key="name" />
+    </node>
+    <node id="11">
+      <data key="name" />
+    </node>
+    <node id="12">
+      <data key="name" />
+    </node>
+    <node id="13">
+      <data key="name" />
+    </node>
+    <node id="14">
+      <data key="name" />
+    </node>
+    <node id="15">
+      <data key="name">ndifblock</data>
+    </node>
+    <node id="16">
+      <data key="name" />
+    </node>
+    <node id="17">
+      <data key="name" />
+    </node>
+    <node id="18">
+      <data key="name">ndifblock</data>
+    </node>
+    <node id="19">
+      <data key="name" />
+    </node>
+    <node id="20">
+      <data key="name" />
+    </node>
+    <node id="21">
+      <data key="name" />
+    </node>
+    <node id="22">
+      <data key="name" />
+    </node>
+    <node id="23">
+      <data key="name" />
+    </node>
+    <node id="24">
+      <data key="name">ndifblock</data>
+    </node>
+    <node id="25">
+      <data key="name" />
+    </node>
+    <node id="26">
+      <data key="name" />
+    </node>
+    <node id="27">
+      <data key="name" />
+    </node>
+    <node id="28">
+      <data key="name" />
+    </node>
+    <node id="29">
+      <data key="name" />
+    </node>
+    <node id="30">
+      <data key="name">ndifblock</data>
+    </node>
+    <node id="31">
+      <data key="name" />
+    </node>
+    <node id="32">
+      <data key="name" />
+    </node>
+    <node id="33">
+      <data key="name" />
+    </node>
+    <node id="34">
+      <data key="name" />
+    </node>
+    <node id="35">
+      <data key="name" />
+    </node>
+    <node id="36">
+      <data key="name" />
+    </node>
+    <node id="37">
+      <data key="name">1 &gt;= 0</data>
+    </node>
+    <edge source="0" target="1" id="exclusive = 0">
+      <data key="text">exclusive = 0</data>
+    </edge>
+    <edge source="1" target="2" id="modified = 0">
+      <data key="text">modified = 0</data>
+    </edge>
+    <edge source="2" target="3" id="shared = 0">
+      <data key="text">shared = 0</data>
+    </edge>
+    <edge source="3" target="4" id="total = (invalid + owned)">
+      <data key="text">total = (invalid + owned)</data>
+    </edge>
+    <edge source="4" target="5" id="">
+      <data key="text" />
+    </edge>
+    <edge source="5" target="6" id="1 &gt;= 0">
+      <data key="text">1 &gt;= 0</data>
+    </edge>
+    <edge source="5" target="8" id="">
+      <data key="text" />
+    </edge>
+    <edge source="5" target="36" id="Not(1 &gt;= 0)">
+      <data key="text">Not(1 &gt;= 0)</data>
+    </edge>
+    <edge source="6" target="7" id="">
+      <data key="text" />
+    </edge>
+    <edge source="7" target="9" id="invalid &gt;= 1">
+      <data key="text">invalid &gt;= 1</data>
+    </edge>
+    <edge source="7" target="15" id="exclusive &gt;= 1">
+      <data key="text">exclusive &gt;= 1</data>
+    </edge>
+    <edge source="7" target="18" id="shared &gt;= 1">
+      <data key="text">shared &gt;= 1</data>
+    </edge>
+    <edge source="7" target="24" id="owned &gt;= 1">
+      <data key="text">owned &gt;= 1</data>
+    </edge>
+    <edge source="7" target="30" id="invalid &gt;= 1">
+      <data key="text">invalid &gt;= 1</data>
+    </edge>
+    <edge source="8" target="14" id="">
+      <data key="text" />
+    </edge>
+    <edge source="8" target="17" id="">
+      <data key="text" />
+    </edge>
+    <edge source="8" target="23" id="">
+      <data key="text" />
+    </edge>
+    <edge source="8" target="29" id="">
+      <data key="text" />
+    </edge>
+    <edge source="8" target="35" id="">
+      <data key="text" />
+    </edge>
+    <edge source="9" target="10" id="shared = ((shared + exclusive) + 1)">
+      <data key="text">shared = ((shared + exclusive) + 1)</data>
+    </edge>
+    <edge source="10" target="11" id="owned = (owned + modified)">
+      <data key="text">owned = (owned + modified)</data>
+    </edge>
+    <edge source="11" target="12" id="invalid = (invalid - 1)">
+      <data key="text">invalid = (invalid - 1)</data>
+    </edge>
+    <edge source="12" target="13" id="exclusive = 0">
+      <data key="text">exclusive = 0</data>
+    </edge>
+    <edge source="13" target="14" id="modified = 0">
+      <data key="text">modified = 0</data>
+    </edge>
+    <edge source="15" target="16" id="exclusive = (exclusive - 1)">
+      <data key="text">exclusive = (exclusive - 1)</data>
+    </edge>
+    <edge source="16" target="17" id="modified = (modified + 1)">
+      <data key="text">modified = (modified + 1)</data>
+    </edge>
+    <edge source="18" target="19" id="invalid = (_a_0_)*(shared)+(_a_1_)*(1)+(_a_2_)*(owned)+(_a_3_)*(exclusive)+(_a_4_)*(invalid)+(_a_5_)*(modified)">
+      <data key="text">invalid = (_a_0_)*(shared)+(_a_1_)*(1)+(_a_2_)*(owned)+(_a_3_)*(exclusive)+(_a_4_)*(invalid)+(_a_5_)*(modified)</data>
+    </edge>
+    <edge source="19" target="20" id="shared = 0">
+      <data key="text">shared = 0</data>
+    </edge>
+    <edge source="20" target="21" id="exclusive = 1">
+      <data key="text">exclusive = 1</data>
+    </edge>
+    <edge source="21" target="22" id="modified = 0">
+      <data key="text">modified = 0</data>
+    </edge>
+    <edge source="22" target="23" id="owned = 0">
+      <data key="text">owned = 0</data>
+    </edge>
+    <edge source="24" target="25" id="invalid = (_a_6_)*(shared)+(_a_7_)*(1)+(_a_8_)*(owned)+(_a_9_)*(exclusive)+(_a_10_)*(invalid)+(_a_11_)*(modified)">
+      <data key="text">invalid = (_a_6_)*(shared)+(_a_7_)*(1)+(_a_8_)*(owned)+(_a_9_)*(exclusive)+(_a_10_)*(invalid)+(_a_11_)*(modified)</data>
+    </edge>
+    <edge source="25" target="26" id="shared = 0">
+      <data key="text">shared = 0</data>
+    </edge>
+    <edge source="26" target="27" id="exclusive = 1">
+      <data key="text">exclusive = 1</data>
+    </edge>
+    <edge source="27" target="28" id="modified = 0">
+      <data key="text">modified = 0</data>
+    </edge>
+    <edge source="28" target="29" id="owned = 0">
+      <data key="text">owned = 0</data>
+    </edge>
+    <edge source="30" target="31" id="invalid = (_a_12_)*(shared)+(_a_13_)*(1)+(_a_14_)*(owned)+(_a_15_)*(exclusive)+(_a_16_)*(invalid)+(_a_17_)*(modified)">
+      <data key="text">invalid = (_a_12_)*(shared)+(_a_13_)*(1)+(_a_14_)*(owned)+(_a_15_)*(exclusive)+(_a_16_)*(invalid)+(_a_17_)*(modified)</data>
+    </edge>
+    <edge source="31" target="32" id="shared = 0">
+      <data key="text">shared = 0</data>
+    </edge>
+    <edge source="32" target="33" id="exclusive = 1">
+      <data key="text">exclusive = 1</data>
+    </edge>
+    <edge source="33" target="34" id="modified = 0">
+      <data key="text">modified = 0</data>
+    </edge>
+    <edge source="34" target="35" id="owned = 0">
+      <data key="text">owned = 0</data>
+    </edge>
+    <edge source="36" target="37" id="">
+      <data key="text" />
+    </edge>
+  </graph>
+</graphml>

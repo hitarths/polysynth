@@ -1,0 +1,30 @@
+real unowned,exclusive,nonexclusive,invalid,total;
+@pre(invalid >= 1);
+exclusive = 0;
+nonexclusive = 0;
+unowned = 0;
+total = invalid;
+while (1 >= 0, ((((exclusive >= 0 and nonexclusive >= 0) and unowned >= 0) and invalid >= 0) and ((unowned + invalid) + (exclusive + nonexclusive)) == total)) {
+ndif {
+[assume (invalid >= 1) {
+nonexclusive = (0)*(1)+(1)*(nonexclusive)+(1)*(exclusive);
+unowned = (unowned + 1);
+invalid = (invalid - 1);
+exclusive = 0;
+[assume (invalid >= 1) {
+invalid = (-1)*(1)+(1)*(invalid)+(1)*(unowned)+(1)*(nonexclusive)+(1)*(exclusive);
+exclusive = 1;
+nonexclusive = 0;
+unowned = 0;
+[assume (nonexclusive >= 1) {
+invalid = (-1)*(1)+(1)*(invalid)+(1)*(unowned)+(1)*(nonexclusive)+(0)*(exclusive);
+exclusive = (exclusive + 1);
+nonexclusive = 0;
+unowned = 0;
+[assume (unowned >= 1) {
+invalid = (-1)*(1)+(1)*(invalid)+(1)*(unowned)+(1)*(nonexclusive)+(0)*(exclusive);
+exclusive = (exclusive + 1);
+nonexclusive = 0;
+unowned = 0;
+}
+@post(1 >= 0);

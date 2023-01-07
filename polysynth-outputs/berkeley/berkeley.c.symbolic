@@ -1,0 +1,30 @@
+real unowned,exclusive,nonexclusive,invalid,total;
+@pre(invalid >= 1);
+exclusive = 0;
+nonexclusive = 0;
+unowned = 0;
+total = invalid;
+while (1 >= 0, ((((exclusive >= 0 and nonexclusive >= 0) and unowned >= 0) and invalid >= 0) and ((unowned + invalid) + (exclusive + nonexclusive)) == total)) {
+ndif {
+[assume (invalid >= 1) {
+nonexclusive = (_a_0_)*(1)+(_a_1_)*(exclusive)+(_a_2_)*(nonexclusive);
+unowned = (unowned + 1);
+invalid = (invalid - 1);
+exclusive = 0;
+[assume (invalid >= 1) {
+invalid = (_a_3_)*(1)+(_a_4_)*(unowned)+(_a_5_)*(invalid)+(_a_6_)*(exclusive)+(_a_7_)*(nonexclusive);
+exclusive = 1;
+nonexclusive = 0;
+unowned = 0;
+[assume (nonexclusive >= 1) {
+invalid = (_a_8_)*(1)+(_a_9_)*(unowned)+(_a_10_)*(invalid)+(_a_11_)*(exclusive)+(_a_12_)*(nonexclusive);
+exclusive = (exclusive + 1);
+nonexclusive = 0;
+unowned = 0;
+[assume (unowned >= 1) {
+invalid = (_a_13_)*(1)+(_a_14_)*(unowned)+(_a_15_)*(invalid)+(_a_16_)*(exclusive)+(_a_17_)*(nonexclusive);
+exclusive = (exclusive + 1);
+nonexclusive = 0;
+unowned = 0;
+}
+@post(1 >= 0);

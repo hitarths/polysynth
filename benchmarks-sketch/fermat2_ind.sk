@@ -1,0 +1,24 @@
+harness void fermat2(int N, int R)
+{
+  assume(N>=1 && (R-1)*(R-1)<= N-1 && N <= R*R);
+  int u = 2*R + 1;
+  int v = 1;
+  int r = R*R - N;
+  while(r!=0)
+  {
+    assert(((N>=1) && ((4*(N+r)) == ((((u*u) - (v*v)) - (2*u)) + (2*v)) )));
+      if(r>0)
+      {
+         r = r - v;
+         v = v*?? + ??;
+      }
+      else
+      {
+        r = r*?? + u*?? + ??;
+        u = u + 2;
+      }
+  }
+  assert(1>=0); 
+}
+
+

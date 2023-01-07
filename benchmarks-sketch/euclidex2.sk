@@ -1,0 +1,29 @@
+harness void euclidex2(int x, int y)
+{
+    assume(x>=0 && y>=0);
+    int a = x;
+    int b = y;
+    int p = 1;
+    int q = 0;
+    int r = 0;
+    int s = 1;
+    while(a!=b)
+    {
+        assert(((a== ((y*r)+(x*p))) && (b == ((x*q) + (y*s)))));
+        if(a>=b)
+        {
+            a = a*?? + b*?? + ??;
+            p = p*?? + q*?? + ??;
+            r = r - s;    
+        }
+        else
+        {
+            b = a*?? + b*?? + ??;
+            q = q - p;
+            s = s*?? + r*?? + ??;
+
+        }
+    }
+    assert(1>=0);
+}
+

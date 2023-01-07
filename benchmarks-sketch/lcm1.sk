@@ -1,0 +1,27 @@
+harness void lcm1(int a,int b)
+{
+	assume(a>=0 && b>=0);
+	 int x = a;
+	 int y = b;
+	 int u = b;
+	 int v = 0;
+	 while(a!=b)
+	 {
+	 	assert(((x*u)+(y*v))==(a*b));
+	 	while(x>y)
+	 	{
+	 		assert(((x*u)+(y*v))==(a*b));
+	 		x = x*?? + y*?? + ??;
+	 		v = v + u;
+		}
+		while(x<y)
+		{
+			assert(((x*u)+(y*v))==(a*b));
+			y = y - x;
+			u = u*?? + v*?? + ??;
+		}
+	 }
+	assert(1>=0);		
+}
+
+

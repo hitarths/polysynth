@@ -1,0 +1,72 @@
+harness void cohendiv(int x, int y)
+{
+    assume(x>=0 && y>=1);
+    int q = 0;
+    int r = x;
+    int d;
+    int dd;
+    while(r >= y)
+    {
+    	assert((x == q*y + r) && (r>=0));
+       	d = 1;
+       	dd = y;
+       	while(r>= 2*dd)
+       	{
+            assert((dd == y*d) && (x== q*y+ r) && (r>=0) && (r >= y*d));
+       		d = 2*d;
+       		dd = ??*dd + ??;
+       	}
+       	r = r - dd;
+       	q = ??*q  + ??*d + ??;
+    }
+    assert(1>=0);
+}
+
+
+
+
+
+/*
+SKETCH version 1.7.6
+Benchmark = Cohendiv.sk
+/* BEGIN PACKAGE ANONYMOUS*/
+/*Cohendiv.sk:1*/
+
+void cohendiv (int x, int y)/*Cohendiv.sk:1*/
+{
+  assume ((x >= 0) && (y >= 1)): "Assume at Cohendiv.sk:3"; //Assume at Cohendiv.sk:3
+  int r = x;
+  int d = 0;
+  int q = 0;
+  int dd = 0;
+  while(r >= y)
+  {
+    assert ((x == ((q * y) + r)) && (r >= 0)); //Assert at Cohendiv.sk:10 (4)
+    d = 1;
+    dd = y;
+    while(r >= (2 * dd))
+    {
+      assert ((((dd == (y * d)) && (x == ((q * y) + r))) && (r >= 0)) && (r >= (y * d))); //Assert at Cohendiv.sk:15 (10)
+      d = 2 * d;
+      dd = (27 * dd) + 16;
+    }
+    r = r - dd;
+    q = (10 * d) + 13;
+  }
+}
+
+
+/*Cohendiv.sk:1*/
+
+void cohendiv__Wrapper (int x, int y)  implements cohendiv__WrapperNospec/*Cohendiv.sk:1*/
+{
+  cohendiv(x, y);
+}
+/*Cohendiv.sk:1*/
+
+void cohendiv__WrapperNospec (int x, int y)/*Cohendiv.sk:1*/
+{ }
+/* END PACKAGE ANONYMOUS*/
+[SKETCH] DONE
+Total time = 6297
+*/

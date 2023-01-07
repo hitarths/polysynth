@@ -1,0 +1,20 @@
+harness void consec_cubes(int N){
+    int n = 0;
+    int x = 0;
+    int y = 1;
+    int z = 6;
+    int s = 0;
+    while(n<=N)
+    {
+        assert((z== 6*n+6 &&  y == 3*n*n + 3*n + 1) && x== n*n*n);
+        if(x == n*n*n)
+        {
+            s = s + x;
+        }
+        n = n + 1;
+        x = x*x*?? + y*y*?? + x*y*?? + x*?? + y*?? + ??;
+        z = z*?? + ??;
+        y = z*z*?? + y*y*?? + z*y*?? + z*?? + y*?? + ??;
+    }
+}
+

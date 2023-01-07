@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="text" for="edge" attr.name="text" attr.type="string" />
+  <key id="name" for="node" attr.name="name" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="0">
+      <data key="name">(t &gt;= 0 and nus &gt;= nuk)</data>
+    </node>
+    <node id="1">
+      <data key="name" />
+    </node>
+    <node id="2">
+      <data key="name" />
+    </node>
+    <node id="3">
+      <data key="name" />
+    </node>
+    <node id="4">
+      <data key="name" />
+    </node>
+    <node id="5">
+      <data key="name" />
+    </node>
+    <node id="6">
+      <data key="name" />
+    </node>
+    <node id="7">
+      <data key="name">If</data>
+    </node>
+    <node id="8">
+      <data key="name" />
+    </node>
+    <node id="9">
+      <data key="name" />
+    </node>
+    <node id="10">
+      <data key="name" />
+    </node>
+    <node id="11">
+      <data key="name" />
+    </node>
+    <node id="12">
+      <data key="name" />
+    </node>
+    <node id="13">
+      <data key="name" />
+    </node>
+    <node id="14">
+      <data key="name" />
+    </node>
+    <node id="15">
+      <data key="name" />
+    </node>
+    <node id="16">
+      <data key="name" />
+    </node>
+    <node id="17">
+      <data key="name">((e &gt;= 0 and e &lt;= 0) and t &gt;= 0)</data>
+    </node>
+    <edge source="0" target="1" id="g = 9.8">
+      <data key="text">g = 9.8</data>
+    </edge>
+    <edge source="1" target="2" id="nuk = 0.2">
+      <data key="text">nuk = 0.2</data>
+    </edge>
+    <edge source="2" target="3" id="nus = 0.3">
+      <data key="text">nus = 0.3</data>
+    </edge>
+    <edge source="3" target="4" id="sin = 0.5">
+      <data key="text">sin = 0.5</data>
+    </edge>
+    <edge source="4" target="5" id="cos = 0.86">
+      <data key="text">cos = 0.86</data>
+    </edge>
+    <edge source="5" target="6" id="l = 10">
+      <data key="text">l = 10</data>
+    </edge>
+    <edge source="6" target="7" id="">
+      <data key="text" />
+    </edge>
+    <edge source="7" target="8" id="sin &gt;= (nus * cos)">
+      <data key="text">sin &gt;= (nus * cos)</data>
+    </edge>
+    <edge source="7" target="12" id="Not (sin &gt;= (nus * cos))">
+      <data key="text">Not (sin &gt;= (nus * cos))</data>
+    </edge>
+    <edge source="8" target="9" id="move = 1">
+      <data key="text">move = 1</data>
+    </edge>
+    <edge source="9" target="10" id="t = (_a_0_)*(1)+(_a_1_)*(move)">
+      <data key="text">t = (_a_0_)*(1)+(_a_1_)*(move)</data>
+    </edge>
+    <edge source="10" target="11" id="e = (((t * t) * ((g * sin) - (g * (nuk * cos)))) - (2 * l))">
+      <data key="text">e = (((t * t) * ((g * sin) - (g * (nuk * cos)))) - (2 * l))</data>
+    </edge>
+    <edge source="11" target="16" id="">
+      <data key="text" />
+    </edge>
+    <edge source="12" target="13" id="move = 0">
+      <data key="text">move = 0</data>
+    </edge>
+    <edge source="13" target="14" id="e = 0">
+      <data key="text">e = 0</data>
+    </edge>
+    <edge source="14" target="15" id="t = (_a_0_)*(1)+(_a_1_)*(move)">
+      <data key="text">t = (_a_0_)*(1)+(_a_1_)*(move)</data>
+    </edge>
+    <edge source="15" target="16" id="">
+      <data key="text" />
+    </edge>
+    <edge source="16" target="17" id="">
+      <data key="text" />
+    </edge>
+  </graph>
+</graphml>

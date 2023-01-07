@@ -1,0 +1,6 @@
+harness void trivialSketch(int x, int y, int n){
+assume x <= 100 && y <= 100;
+x = (n-10)*n + ((??)*n + ??);
+y = (x-10)*x + ((??)*n + ??);
+assert x+y >= 0;
+}

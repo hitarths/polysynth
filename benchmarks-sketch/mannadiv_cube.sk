@@ -1,0 +1,68 @@
+harness void mannadiv_cube(int n)
+ {
+   assume(  n >= 0 );
+  int y = n;
+   int x = 0;
+   int t = 0;
+
+   while( y > 0) 
+   {
+   	 assert( x*x*x + 3*t + y-n == 0 );
+     if(t == x*x) {
+
+       y = ??*y + ??*x + ??;
+       t = 0;
+       x = x + 1;
+     }
+
+     else {
+       y = y - 3;
+       t = t + 1;
+     }
+   }
+   assert(1>=0);
+ }
+
+
+/*
+ SKETCH version 1.7.6
+Benchmark = Mannadiv_cube.sk
+/* BEGIN PACKAGE ANONYMOUS*/
+/*Mannadiv_cube.sk:1*/
+
+void mannadiv_cube (int n)/*Mannadiv_cube.sk:1*/
+{
+  assume (n >= 0): "Assume at Mannadiv_cube.sk:3"; //Assume at Mannadiv_cube.sk:3
+  int y = n;
+  int t = 0;
+  int x = 0;
+  while(y > 0)
+  {
+    assert ((((((x * x) * x) + (3 * t)) + y) - n) == 0); //Assert at Mannadiv_cube.sk:10 (5)
+    if(t == (x * x))/*Mannadiv_cube.sk:11*/
+    {
+      y = 0;
+      t = 0;
+      x = x + 1;
+    }
+    else
+    {
+      y = y - 3;
+      t = t + 1;
+    }
+  }
+}
+/*Mannadiv_cube.sk:1*/
+
+void mannadiv_cube__Wrapper (int n)  implements mannadiv_cube__WrapperNospec/*Mannadiv_cube.sk:1*/
+{
+  mannadiv_cube(n);
+}
+/*Mannadiv_cube.sk:1*/
+
+void mannadiv_cube__WrapperNospec (int n)/*Mannadiv_cube.sk:1*/
+{ }
+/* END PACKAGE ANONYMOUS*/
+[SKETCH] DONE
+Total time = 328
+*/

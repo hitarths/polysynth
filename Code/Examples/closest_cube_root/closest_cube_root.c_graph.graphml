@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="text" for="edge" attr.name="text" attr.type="string" />
+  <key id="name" for="node" attr.name="name" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="0">
+      <data key="name">a &gt;= 0</data>
+    </node>
+    <node id="1">
+      <data key="name" />
+    </node>
+    <node id="2">
+      <data key="name" />
+    </node>
+    <node id="3">
+      <data key="name" />
+    </node>
+    <node id="4">
+      <data key="name">((x &gt;= 0 and (((-12 * r) * r) + (4 * s)) == 1) and (((((((4 * r) * r) * r) + ((-6 * r) * r)) + (3 * r)) + (4 * x)) + (-4 * a)) == 1)</data>
+    </node>
+    <node id="5">
+      <data key="name" />
+    </node>
+    <node id="6">
+      <data key="name" />
+    </node>
+    <node id="7">
+      <data key="name" />
+    </node>
+    <node id="8">
+      <data key="name" />
+    </node>
+    <node id="9">
+      <data key="name" />
+    </node>
+    <node id="10">
+      <data key="name">((((((4 * r) * r) * r) + ((6 * r) * r)) + (3 * r)) &gt;= (4 * a) and (4 * a) &gt;= ((((((4 * r) * r) * r) + ((-6 * r) * r)) + (3 * r)) + -1))</data>
+    </node>
+    <edge source="0" target="1" id="x = a">
+      <data key="text">x = a</data>
+    </edge>
+    <edge source="1" target="2" id="r = 1">
+      <data key="text">r = 1</data>
+    </edge>
+    <edge source="2" target="3" id="s = 3.25">
+      <data key="text">s = 3.25</data>
+    </edge>
+    <edge source="3" target="4" id="">
+      <data key="text" />
+    </edge>
+    <edge source="4" target="5" id="(x - s) &gt;= 0">
+      <data key="text">(x - s) &gt;= 0</data>
+    </edge>
+    <edge source="4" target="8" id="">
+      <data key="text" />
+    </edge>
+    <edge source="4" target="9" id="Not((x - s) &gt;= 0)">
+      <data key="text">Not((x - s) &gt;= 0)</data>
+    </edge>
+    <edge source="5" target="6" id="x = (_a_0_)*(1)+(_a_1_)*(x)+(_a_2_)*(s)">
+      <data key="text">x = (_a_0_)*(1)+(_a_1_)*(x)+(_a_2_)*(s)</data>
+    </edge>
+    <edge source="6" target="7" id="s = (_a_3_)*(1)+(_a_4_)*(s)+(_a_5_)*(r)">
+      <data key="text">s = (_a_3_)*(1)+(_a_4_)*(s)+(_a_5_)*(r)</data>
+    </edge>
+    <edge source="7" target="8" id="r = (r + 1)">
+      <data key="text">r = (r + 1)</data>
+    </edge>
+    <edge source="9" target="10" id="">
+      <data key="text" />
+    </edge>
+  </graph>
+</graphml>

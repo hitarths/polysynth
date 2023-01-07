@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="text" for="edge" attr.name="text" attr.type="string" />
+  <key id="name" for="node" attr.name="name" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="0">
+      <data key="name">(x &gt;= 0 and y &gt;= 0)</data>
+    </node>
+    <node id="1">
+      <data key="name" />
+    </node>
+    <node id="2">
+      <data key="name" />
+    </node>
+    <node id="3">
+      <data key="name" />
+    </node>
+    <node id="4">
+      <data key="name" />
+    </node>
+    <node id="5">
+      <data key="name" />
+    </node>
+    <node id="6">
+      <data key="name" />
+    </node>
+    <node id="7">
+      <data key="name">(a == ((y * r) + (x * p)) and b == ((x * q) + (y * s)))</data>
+    </node>
+    <node id="8">
+      <data key="name" />
+    </node>
+    <node id="9">
+      <data key="name">If</data>
+    </node>
+    <node id="10">
+      <data key="name" />
+    </node>
+    <node id="11">
+      <data key="name" />
+    </node>
+    <node id="12">
+      <data key="name" />
+    </node>
+    <node id="13">
+      <data key="name" />
+    </node>
+    <node id="14">
+      <data key="name" />
+    </node>
+    <node id="15">
+      <data key="name" />
+    </node>
+    <node id="16">
+      <data key="name" />
+    </node>
+    <node id="17">
+      <data key="name" />
+    </node>
+    <node id="18">
+      <data key="name" />
+    </node>
+    <node id="19">
+      <data key="name" />
+    </node>
+    <node id="20">
+      <data key="name">1 &gt;= 0</data>
+    </node>
+    <edge source="0" target="1" id="a = x">
+      <data key="text">a = x</data>
+    </edge>
+    <edge source="1" target="2" id="b = y">
+      <data key="text">b = y</data>
+    </edge>
+    <edge source="2" target="3" id="p = 1">
+      <data key="text">p = 1</data>
+    </edge>
+    <edge source="3" target="4" id="q = 0">
+      <data key="text">q = 0</data>
+    </edge>
+    <edge source="4" target="5" id="r = 0">
+      <data key="text">r = 0</data>
+    </edge>
+    <edge source="5" target="6" id="s = 1">
+      <data key="text">s = 1</data>
+    </edge>
+    <edge source="6" target="7" id="">
+      <data key="text" />
+    </edge>
+    <edge source="7" target="8" id="1 &gt;= 0">
+      <data key="text">1 &gt;= 0</data>
+    </edge>
+    <edge source="7" target="18" id="">
+      <data key="text" />
+    </edge>
+    <edge source="7" target="19" id="Not(1 &gt;= 0)">
+      <data key="text">Not(1 &gt;= 0)</data>
+    </edge>
+    <edge source="8" target="9" id="">
+      <data key="text" />
+    </edge>
+    <edge source="9" target="10" id="a &gt;= b">
+      <data key="text">a &gt;= b</data>
+    </edge>
+    <edge source="9" target="14" id="Not (a &gt;= b)">
+      <data key="text">Not (a &gt;= b)</data>
+    </edge>
+    <edge source="10" target="11" id="a = (_a_0_)*(1)+(_a_1_)*(a)+(_a_2_)*(b)">
+      <data key="text">a = (_a_0_)*(1)+(_a_1_)*(a)+(_a_2_)*(b)</data>
+    </edge>
+    <edge source="11" target="12" id="p = (_a_3_)*(q)+(_a_4_)*(1)+(_a_5_)*(p)">
+      <data key="text">p = (_a_3_)*(q)+(_a_4_)*(1)+(_a_5_)*(p)</data>
+    </edge>
+    <edge source="12" target="13" id="r = (r - s)">
+      <data key="text">r = (r - s)</data>
+    </edge>
+    <edge source="13" target="18" id="">
+      <data key="text" />
+    </edge>
+    <edge source="14" target="15" id="b = (_a_6_)*(1)+(_a_7_)*(a)+(_a_8_)*(b)">
+      <data key="text">b = (_a_6_)*(1)+(_a_7_)*(a)+(_a_8_)*(b)</data>
+    </edge>
+    <edge source="15" target="16" id="q = (q - p)">
+      <data key="text">q = (q - p)</data>
+    </edge>
+    <edge source="16" target="17" id="s = (_a_9_)*(s)+(_a_10_)*(1)+(_a_11_)*(r)">
+      <data key="text">s = (_a_9_)*(s)+(_a_10_)*(1)+(_a_11_)*(r)</data>
+    </edge>
+    <edge source="17" target="18" id="">
+      <data key="text" />
+    </edge>
+    <edge source="19" target="20" id="">
+      <data key="text" />
+    </edge>
+  </graph>
+</graphml>

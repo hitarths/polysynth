@@ -1,0 +1,28 @@
+real modified,shared,exclusive,invalid,total;
+@pre(invalid >= 1);
+exclusive = 0;
+modified = 0;
+shared = 0;
+total = invalid;
+while (1 >= 0, (((exclusive >= 0 and shared >= 0) and (modified >= 0 and invalid >= 0)) and ((modified + shared) + (exclusive + invalid)) == total)) {
+ndif {
+[assume (invalid >= 1) {
+shared = (_a_0_)*(1)+(_a_1_)*(modified)+(_a_2_)*(invalid)+(_a_3_)*(shared)+(_a_4_)*(exclusive);
+invalid = (invalid - 1);
+exclusive = 0;
+modified = 0;
+[assume (exclusive >= 1) {
+exclusive = (exclusive - 1);
+modified = (modified + 1);
+[assume (shared >= 1) {
+invalid = (_a_5_)*(1)+(_a_6_)*(modified)+(_a_7_)*(invalid)+(_a_8_)*(shared)+(_a_9_)*(exclusive);
+shared = 0;
+exclusive = 1;
+modified = 0;
+[assume (invalid >= 1) {
+invalid = (_a_10_)*(1)+(_a_11_)*(modified)+(_a_12_)*(invalid)+(_a_13_)*(shared)+(_a_14_)*(exclusive);
+shared = 0;
+exclusive = 1;
+modified = 0;
+}
+@post(1 >= 0);

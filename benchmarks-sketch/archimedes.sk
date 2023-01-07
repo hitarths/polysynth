@@ -1,0 +1,21 @@
+harness void archimedes(int fl, int m, int e, int x){
+    assume(x>=0 && m>=0);
+    int l = 10;
+    int b = 5;
+    int h = 2;
+    int rho = 2;
+    int f = (??*m + ??)*(??*fl + 1); 
+    if(m <= rho*l*b*h)
+    {
+        fl = 1; 
+        x  = f ; 
+        e = m - rho*l*b*h*x;
+    }
+    else
+    {
+        e = 0;
+        fl = 0;
+        x = f;
+    }
+    assert((e==0 && x>=0) && x<=1);  
+}

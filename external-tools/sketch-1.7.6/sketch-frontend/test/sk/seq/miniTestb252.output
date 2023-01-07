@@ -1,0 +1,255 @@
+SKETCH version 1.7.6
+Benchmark = miniTestb252.sk
+    [0;32m[1655145861.7860 - DEBUG] Running stage 'parse' -- Parse the program from a file[0m
+    [0;32m[1655145861.9310 - DEBUG] Running stage 'preproc' -- Preprocessing (used for all further transformations)[0m
+miniTestb252.sk:41: Making final N
+miniTestb252.sk:3: Making final N
+    [0;32m[1655145862.0190 - DEBUG] Running stage SpmdLowLevelCStage[0m
+    [0;32m[1655145862.0220 - DEBUG]    Running visitor FlattenStmtBlocks2[0m
+    [0;32m[1655145862.0230 - DEBUG]    Running visitor SplitAssignFromVarDef[0m
+    [0;32m[1655145862.0250 - DEBUG]    Running visitor EliminateComplexForLoops[0m
+    [0;32m[1655145862.0270 - DEBUG] Running stage 'lowering' -- Lower for SKETCH backend[0m
+    [0;32m[1655145862.0360 - DEBUG] Running stage 'sten' -- Stencil transformations[0m
+[SATBackend] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[SATBackend] MAX LOOP UNROLLING = 8
+[SATBackend] MAX FUNC INLINING  = 2
+[SATBackend] After prog.accept(partialEval)
+[SATBackend] OFILE = null
+resolved cegis to path /Users/harshit/Google Drive/Projects/2022/Program Synthesis/sketch-1.7.6/sketch-backend/src/SketchSolver/cegis
+    [0;32m[1655145862.3590 - DEBUG] executing /Users/harshit/Google Drive/Projects/2022/Program Synthesis/sketch-1.7.6/sketch-backend/src/SketchSolver/cegis --bnd-inbits 5 --boundmode CALLNAME --verbosity 5 --print-version -simiters 4 -synth MINI -verif MINI --assumebcheck --bnd-inline-amnt 2 -angelictupledepth 1 -srctupledepth 2 -sprandbias 1 -numericalsolvermode ONLY_SMOOTHING -numtries 1 -conflictcutoff 1 -maxrestarts 10 -costoption 1 -o /Users/harshit/.sketch/tmp/miniTestb252.sk/solution0-0 /Users/harshit/.sketch/tmp/miniTestb252.sk/input0.tmp[0m
+[SATBackend] Launching: /Users/harshit/Google Drive/Projects/2022/Program Synthesis/sketch-1.7.6/sketch-backend/src/SketchSolver/cegis --bnd-inbits 5 --boundmode CALLNAME --verbosity 5 --print-version -simiters 4 -synth MINI -verif MINI --assumebcheck --bnd-inline-amnt 2 -angelictupledepth 1 -srctupledepth 2 -sprandbias 1 -numericalsolvermode ONLY_SMOOTHING -numtries 1 -conflictcutoff 1 -maxrestarts 10 -costoption 1 -o /Users/harshit/.sketch/tmp/miniTestb252.sk/solution0-0 /Users/harshit/.sketch/tmp/miniTestb252.sk/input0.tmp 
+starting command line: [/Users/harshit/Google Drive/Projects/2022/Program Synthesis/sketch-1.7.6/sketch-backend/src/SketchSolver/cegis, --bnd-inbits, 5, --boundmode, CALLNAME, --verbosity, 5, --print-version, -simiters, 4, -synth, MINI, -verif, MINI, --assumebcheck, --bnd-inline-amnt, 2, -angelictupledepth, 1, -srctupledepth, 2, -sprandbias, 1, -numericalsolvermode, ONLY_SMOOTHING, -numtries, 1, -conflictcutoff, 1, -maxrestarts, 10, -costoption, 1, -o, /Users/harshit/.sketch/tmp/miniTestb252.sk/solution0-0, /Users/harshit/.sketch/tmp/miniTestb252.sk/input0.tmp]
+Overriding inputs with 5
+boundmode = CALLNAME
+ synth = |MINI|
+ verif = |MINI|
+assuming  bounds checks
+Unknown flag -numericalsolvermode
+Unknown flag -numtries
+Unknown flag -conflictcutoff
+Unknown flag -maxrestarts
+Unknown flag -costoption
+SOLVER RAND SEED = 1655145862
+ optimization level = 6
+Reading SKETCH Program in File /Users/harshit/.sketch/tmp/miniTestb252.sk/input0.tmp
+* before  EVERYTHING: test0::SPEC nodes = 21	 testSK0::SKETCH nodes = 116
+ INBITS = 5
+ CBITS  = 5
+ input_ints = 3 	 input_bits = 0
+ Inlining amount = 2
+ Inlining functions in the sketch.
+ Inlining functions in the spec.
+* Final Problem size: Problem nodes = 890
+  # OF CONTROLS:    60
+ control_ints = 40 	 control_bits = 20
+inputSize = 11	ctrlSize = 220
+Random seeds = 1
+BEG CHECK
+ * After optims it became = 52 was 890
+The spec and sketch can not be made to be equal. _p_out_test0_ANONYMOUS
+END CHECK
+********  0	ftime= 0	ctime= 0.001
+BEG FIND
+Level 1  intsize = 2
+ * After optims it became = 778 was 890
+* TIME TO ADD INPUT :  0.017 ms 
+ Removed 1468 clauses
+DECISIONS START = 0
+f# %assign: 4 clauses: 70074 learn: 167 restart: 2 decision: 4635 propagated: 64983
+END FIND
+BEG CHECK
+ * After optims it became = 112 was 890
+Assert at miniTestb252.sk:45 (5)
+END CHECK
+********  1	ftime= 0.025	ctime= 0.001
+BEG FIND
+Level 1  intsize = 2
+ * After optims it became = 625 was 890
+* TIME TO ADD INPUT :  0.011 ms 
+DECISIONS START = 4635
+f# %assign: 3 clauses: 105841 learn: 177 restart: 3 decision: 5345 propagated: 84100
+END FIND
+BEG CHECK
+ * After optims it became = 129 was 890
+The spec and sketch can not be made to be equal. _p_out_test0_ANONYMOUS
+END CHECK
+********  2	ftime= 0.014	ctime= 0.001
+BEG FIND
+Level 1  intsize = 2
+ * After optims it became = 777 was 890
+* TIME TO ADD INPUT :  0.019 ms 
+DECISIONS START = 5345
+f# %assign: 3 clauses: 164076 learn: 179 restart: 4 decision: 5791 propagated: 113210
+END FIND
+BEG CHECK
+ * After optims it became = 126 was 890
+Assert at miniTestb252.sk:46 (5)
+END CHECK
+********  3	ftime= 0.024	ctime= 0.001
+BEG FIND
+Level 1  intsize = 2
+ * After optims it became = 626 was 890
+* TIME TO ADD INPUT :  0.009 ms 
+DECISIONS START = 5791
+ Removed 1038 clauses
+f# %assign: 2 clauses: 199002 learn: 394 restart: 6 decision: 7876 propagated: 439966
+END FIND
+BEG CHECK
+ * After optims it became = 112 was 890
+c# %assign: 12 clauses: 9 learn: 0 restart: 0 decision: 0 propagated: 1
+ reduced size from 112 to 105
+After all optim
+ Removed 0 clauses
+DECISIONS START = 0
+c# %assign: 1 clauses: 465 learn: 2 restart: 1 decision: 31 propagated: 295
+END CHECK
+********  4	ftime= 0.038	ctime= 0.001
+BEG FIND
+Level 1  intsize = 2
+ * After optims it became = 667 was 890
+* TIME TO ADD INPUT :  0.011 ms 
+DECISIONS START = 7876
+f# %assign: 3 clauses: 236669 learn: 395 restart: 7 decision: 8266 propagated: 480064
+END FIND
+BEG CHECK
+ * After optims it became = 112 was 890
+The spec and sketch can not be made to be equal. _p_out_test0_ANONYMOUS
+END CHECK
+********  5	ftime= 0.014	ctime= 0.001
+BEG FIND
+Level 1  intsize = 2
+ * After optims it became = 667 was 890
+* TIME TO ADD INPUT :  0.011 ms 
+DECISIONS START = 8266
+f# %assign: 2 clauses: 267717 learn: 446 restart: 8 decision: 9373 propagated: 551200
+END FIND
+BEG CHECK
+ * After optims it became = 121 was 890
+c# %assign: 12 clauses: 9 learn: 0 restart: 0 decision: 0 propagated: 1
+ reduced size from 121 to 114
+After all optim
+ Removed 0 clauses
+DECISIONS START = 0
+c# %assign: 1 clauses: 556 learn: 0 restart: 1 decision: 21 propagated: 264
+END CHECK
+********  6	ftime= 0.017	ctime= 0.002
+BEG FIND
+Level 1  intsize = 2
+ * After optims it became = 649 was 890
+* TIME TO ADD INPUT :  0.009 ms 
+DECISIONS START = 9373
+ Removed 850 clauses
+ Removed 15 clauses
+f# %assign: 2 clauses: 303798 learn: 5060 restart: 16 decision: 34172 propagated: 6079025
+END FIND
+BEG CHECK
+ * After optims it became = 123 was 890
+c# %assign: 12 clauses: 9 learn: 0 restart: 0 decision: 0 propagated: 1
+ reduced size from 123 to 116
+After all optim
+ Removed 0 clauses
+DECISIONS START = 0
+c# %assign: 0 clauses: 689 learn: 1 restart: 1 decision: 26 propagated: 377
+END CHECK
+********  7	ftime= 999.471	ctime= 0.001
+BEG FIND
+Level 1  intsize = 2
+ * After optims it became = 778 was 890
+* TIME TO ADD INPUT :  0.014 ms 
+ Removed 695 clauses
+DECISIONS START = 34172
+f# %assign: 2 clauses: 354671 learn: 5204 restart: 18 decision: 35541 propagated: 6475018
+END FIND
+BEG CHECK
+ * After optims it became = 119 was 890
+The spec and sketch can not be made to be equal. _p_out_test0_ANONYMOUS
+END CHECK
+********  8	ftime= 0.061	ctime= 0.001
+BEG FIND
+Level 1  intsize = 2
+ * After optims it became = 777 was 890
+* TIME TO ADD INPUT :  0.016 ms 
+DECISIONS START = 35541
+f# %assign: 2 clauses: 411832 learn: 5770 restart: 22 decision: 39859 propagated: 7454440
+END FIND
+BEG CHECK
+ * After optims it became = 122 was 890
+Assert at miniTestb252.sk:45 (5)
+END CHECK
+********  9	ftime= 0.106	ctime= 0.002
+BEG FIND
+Level 1  intsize = 2
+ * After optims it became = 625 was 890
+* TIME TO ADD INPUT :  0.009 ms 
+DECISIONS START = 39859
+ Removed 269 clauses
+f# %assign: 2 clauses: 446077 learn: 5500 restart: 25 decision: 41992 propagated: 8058560
+END FIND
+BEG CHECK
+ * After optims it became = 121 was 890
+c# %assign: 12 clauses: 9 learn: 0 restart: 0 decision: 0 propagated: 1
+ reduced size from 121 to 114
+After all optim
+ Removed 0 clauses
+DECISIONS START = 0
+c# %assign: 76 clauses: 587 learn: 17 restart: 1 decision: 60 propagated: 1457
+c# %assign: 7 clauses: 25 learn: 0 restart: 0 decision: 0 propagated: 1
+ reduced size from 121 to 114
+After all optim
+ Removed 0 clauses
+DECISIONS START = 0
+ Removed 631 clauses
+c# %assign: 71 clauses: 516 learn: 13 restart: 1 decision: 125 propagated: 5611
+c# %assign: 4 clauses: 65 learn: 0 restart: 0 decision: 0 propagated: 1
+ reduced size from 121 to 114
+After all optim
+ Removed 0 clauses
+DECISIONS START = 0
+ Removed 3 clauses
+c# %assign: 66 clauses: 2304 learn: 123 restart: 2 decision: 548 propagated: 19033
+c# %assign: 2 clauses: 161 learn: 0 restart: 0 decision: 0 propagated: 1
+ reduced size from 121 to 114
+After all optim
+ Removed 0 clauses
+DECISIONS START = 0
+ Removed 3 clauses
+ Removed 4 clauses
+c# %assign: 45 clauses: 4700 learn: 391 restart: 3 decision: 1438 propagated: 98007
+END CHECK
+********  10	ftime= 0.071	ctime= 0.016
+ *GOT THE CORRECT ANSWER IN 11 iterations.
+ *FIND TIME 999.841 CHECK TIME 0.028 TOTAL TIME 999.869
+VALUES H__0_4: 2, H__0_4_0: 6, H__0_4_1: 10, H__0_4_2: 1, H__0_4_3: 0, H__0_5: 2, H__0_5_0: 1, H__0_5_1: 0, H__0_5_2: 1, H__0_5_3: 0, H__0_6: 2, H__0_6_0: 17, H__0_6_1: 6, H__0_6_2: 1, H__0_6_3: 1, H__0_7: 2, H__0_7_0: 1, H__0_7_1: 1, H__0_7_2: 1, H__0_7_3: 1, H__1_4: 0, H__1_4_0: 0, H__1_4_1: 0, H__1_4_2: 0, H__1_4_3: 0, H__1_5: 1, H__1_5_0: 0, H__1_5_1: 0, H__1_5_2: 0, H__1_5_3: 0, H__1_6: 0, H__1_6_0: 0, H__1_6_1: 0, H__1_6_2: 1, H__1_6_3: 1, H__1_7: 1, H__1_7_0: 0, H__1_7_1: 1, H__1_7_2: 0, H__1_7_3: 0, H__2_4: 0, H__2_4_0: 0, H__2_4_1: 16, H__2_4_2: 1, H__2_4_3: 2, H__2_5: 0, H__2_5_0: 0, H__2_5_1: 0, H__2_5_2: 31, H__2_5_3: 16, H__2_6: 0, H__2_6_0: 6, H__2_6_1: 0, H__2_6_2: 1, H__2_6_3: 2, H__2_7: 0, H__2_7_0: 1, H__2_7_1: 2, H__2_7_2: 6, H__2_7_3: 4, 
+RESULT = 2  
+**ROUND 0 : 0 Round time:  999.878 ms 
+RNDDEG = -1
+return 0
+
+----- Statistics -----
+Total elapsed time (ms):  999.916
+Model building time (ms): 0.024
+Solution time (ms):       999.878
+Max virtual mem (bytes):  0
+Max resident mem (bytes): 0
+Max private mem (bytes):  0
+ALL CORRECT
+[SATBackend] Stats for last run:
+      [solution stats]
+      successful? ---------------------> true
+      elapsed time (s) ----------------> 0.927
+      model building time (s) ---------> 0.0
+      solution time (s) ---------------> 0.999
+      max memory usage (MiB) ----------> 0.0
+      [SAT-specific solution stats]
+      initial number of nodes ---------> 116
+      number of nodes after opts ------> 890
+      number of controls --------------> 60
+      total number of control bits ----> 220
+
+[SATBackend] Solver exit value: 0
+    [0;32m[1655145863.2920 - DEBUG] Running stage 'subst' -- Substitute a solution (assignment to ??'s) into the sketch[0m
+    [0;32m[1655145863.2940 - DEBUG] Running stage 'cleanup' -- Clean up sketch after substitutions for readability[0m
+    [0;32m[1655145863.3110 - DEBUG] Running stage 'outputc' -- Output C code (to console or file)[0m
+    [0;33m[1655145863.3240 - NOTE] Wrote test harness to ./miniTestb252_test.cpp[0m
+[SKETCH] DONE
+Total time = 1632

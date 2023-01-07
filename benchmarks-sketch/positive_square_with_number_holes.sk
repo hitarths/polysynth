@@ -1,0 +1,6 @@
+harness void postive_squares(int x, int n){
+	assume(x<=100);
+	x = (n-5)*n + ??;
+	assert(x>=0);
+}
+

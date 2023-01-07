@@ -1,0 +1,4 @@
+harness void main(float x){
+double y = x * ??;
+assert y >= x + x;
+}

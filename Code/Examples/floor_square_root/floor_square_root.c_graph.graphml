@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="text" for="edge" attr.name="text" attr.type="string" />
+  <key id="name" for="node" attr.name="name" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="0">
+      <data key="name">n &gt;= 0</data>
+    </node>
+    <node id="1">
+      <data key="name" />
+    </node>
+    <node id="2">
+      <data key="name" />
+    </node>
+    <node id="3">
+      <data key="name" />
+    </node>
+    <node id="4">
+      <data key="name">(((a * a) &lt;= n and t == ((2 * a) + 1)) and su == ((a + 1) * (a + 1)))</data>
+    </node>
+    <node id="5">
+      <data key="name" />
+    </node>
+    <node id="6">
+      <data key="name" />
+    </node>
+    <node id="7">
+      <data key="name" />
+    </node>
+    <node id="8">
+      <data key="name" />
+    </node>
+    <node id="9">
+      <data key="name" />
+    </node>
+    <node id="10">
+      <data key="name">(a * a) &lt;= n</data>
+    </node>
+    <edge source="0" target="1" id="a = 0">
+      <data key="text">a = 0</data>
+    </edge>
+    <edge source="1" target="2" id="su = 1">
+      <data key="text">su = 1</data>
+    </edge>
+    <edge source="2" target="3" id="t = 1">
+      <data key="text">t = 1</data>
+    </edge>
+    <edge source="3" target="4" id="">
+      <data key="text" />
+    </edge>
+    <edge source="4" target="5" id="su &lt;= n">
+      <data key="text">su &lt;= n</data>
+    </edge>
+    <edge source="4" target="8" id="">
+      <data key="text" />
+    </edge>
+    <edge source="4" target="9" id="Not(su &lt;= n)">
+      <data key="text">Not(su &lt;= n)</data>
+    </edge>
+    <edge source="5" target="6" id="a = (a + 1)">
+      <data key="text">a = (a + 1)</data>
+    </edge>
+    <edge source="6" target="7" id="t = (_a_0_)*(1)+(_a_1_)*(t)">
+      <data key="text">t = (_a_0_)*(1)+(_a_1_)*(t)</data>
+    </edge>
+    <edge source="7" target="8" id="su = (_a_2_)*(1)+(_a_3_)*(t)+(_a_4_)*(su)">
+      <data key="text">su = (_a_2_)*(1)+(_a_3_)*(t)+(_a_4_)*(su)</data>
+    </edge>
+    <edge source="9" target="10" id="">
+      <data key="text" />
+    </edge>
+  </graph>
+</graphml>

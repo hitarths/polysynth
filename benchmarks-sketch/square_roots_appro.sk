@@ -1,0 +1,65 @@
+harness void square_roots_appro(float a, float err){
+    assume(a>=1.0 && err>=0.0);
+    float r = a - 1.0;
+    float q = 1.0;
+    float p = 0.5;
+    while(2.0*p*r >= err)
+    {
+        assert(p>=0.0 && r>=0.0 && q*q + 2.0*r*p == a);
+        if(2.0*r - 2.0*q - p >= 0.0)
+        {
+            r = r*?? + p*?? + q*?? + ??;
+            q = p + q*?? + ??;
+            p = p*0.5;
+        }
+        else
+        {
+            r = r*?? + ??;
+            p = p*0.5;
+        }
+    }
+    assert(q*q >= a - err && q*q <= a);
+}
+
+
+
+Benchmark = square_roots_appro.sk
+/* BEGIN PACKAGE ANONYMOUS*/
+/*square_.._appro.sk:1*/
+
+// void square_roots_appro (float a, float err)/*square_.._appro.sk:1*/
+// {
+//   assume ((a >= (1.0)) && (err >= (0.0))): "Assume at square_.._appro.sk:2"; //Assume at square_.._appro.sk:2
+//   float r = a - (1.0);
+//   float q = 1.0;
+//   float p = 0.5;
+//   while((((2.0) * p) * r) >= err)
+//   {
+//     assert (((p >= (0.0)) && (r >= (0.0))) && (((q * q) + (((2.0) * r) * p)) == a)); //Assert at square_.._appro.sk:8 (4)
+//     if(((((2.0) * r) - ((2.0) * q)) - p) >= (0.0))/*square_.._appro.sk:9*/
+//     {
+//       r = (((r * (0.0)) + (p * (0.0))) + (q * (0.0))) + (0.0);
+//       q = (p + (q * (0.0))) + (0.0);
+//       p = p * (0.5);
+//     }
+//     else
+//     {
+//       r = (r * (0.0)) + (0.0);
+//       p = p * (0.5);
+//     }
+//   }
+//   assert (((q * q) >= (a - err)) && ((q * q) <= a)); //Assert at square_.._appro.sk:21 (2)
+// }
+// /*square_.._appro.sk:1*/
+
+// void square_roots_appro__Wrapper (float a, float err)  implements square_roots_appro__WrapperNospec/*square_.._appro.sk:1*/
+// {
+//   square_roots_appro(a, err);
+// }
+// /*square_.._appro.sk:1*/
+
+// void square_roots_appro__WrapperNospec (float a, float err)/*square_.._appro.sk:1*/
+// { }
+// /* END PACKAGE ANONYMOUS*/
+// [SKETCH] DONE
+// Total time = 390

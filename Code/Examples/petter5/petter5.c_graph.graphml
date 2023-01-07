@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="text" for="edge" attr.name="text" attr.type="string" />
+  <key id="name" for="node" attr.name="name" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="0">
+      <data key="name">N &gt;= 0</data>
+    </node>
+    <node id="1">
+      <data key="name" />
+    </node>
+    <node id="2">
+      <data key="name" />
+    </node>
+    <node id="3">
+      <data key="name">(s == (((n * n) * (n * n)) * (n * n)) and n &lt;= (N + 1))</data>
+    </node>
+    <node id="4">
+      <data key="name" />
+    </node>
+    <node id="5">
+      <data key="name" />
+    </node>
+    <node id="6">
+      <data key="name" />
+    </node>
+    <node id="7">
+      <data key="name" />
+    </node>
+    <node id="8">
+      <data key="name">1 &gt;= 0</data>
+    </node>
+    <edge source="0" target="1" id="s = 0">
+      <data key="text">s = 0</data>
+    </edge>
+    <edge source="1" target="2" id="n = 0">
+      <data key="text">n = 0</data>
+    </edge>
+    <edge source="2" target="3" id="">
+      <data key="text" />
+    </edge>
+    <edge source="3" target="4" id="n &lt;= N">
+      <data key="text">n &lt;= N</data>
+    </edge>
+    <edge source="3" target="6" id="">
+      <data key="text" />
+    </edge>
+    <edge source="3" target="7" id="Not(n &lt;= N)">
+      <data key="text">Not(n &lt;= N)</data>
+    </edge>
+    <edge source="4" target="5" id="s = (s + (_a_0_)*(1)+(_a_1_)*(n**2)+(_a_2_)*(n**3)+(_a_3_)*(n)+(_a_4_)*(n**4)+(_a_5_)*(n**5))">
+      <data key="text">s = (s + (_a_0_)*(1)+(_a_1_)*(n**2)+(_a_2_)*(n**3)+(_a_3_)*(n)+(_a_4_)*(n**4)+(_a_5_)*(n**5))</data>
+    </edge>
+    <edge source="5" target="6" id="n = (n + 1)">
+      <data key="text">n = (n + 1)</data>
+    </edge>
+    <edge source="7" target="8" id="">
+      <data key="text" />
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,25 @@
+harness void wensley(float P, float Q, float E)
+{
+	assume(Q>= P && P>=0.0 && E>=0.0);
+	float a = 0.0;
+	float b = Q/2.0;
+	float d = 1.0;
+	float y = 0.0;
+	while(d>= E)
+	{
+		assert(a == Q*y && b == Q*(d/2.0)&& P - d*Q <= y*Q && y*Q <= P);
+		if(P <= a + b)
+		{
+			b = b*?? + ??;
+			d = d/2.0;
+		}
+		else
+		{
+			a = a*?? + b*?? + ??;
+			y = y*?? + d*?? + ??;
+			b = b/2.0;
+			d = d/2.0;
+		}
+	}
+	assert(1>=0);
+}

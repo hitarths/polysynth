@@ -1,0 +1,418 @@
+SKETCH version 1.7.6
+Benchmark = miniTestb320.sk
+    [0;32m[1655146029.9930 - DEBUG] Running stage 'parse' -- Parse the program from a file[0m
+    [0;32m[1655146030.1330 - DEBUG] Running stage 'preproc' -- Preprocessing (used for all further transformations)[0m
+miniTestb320.sk:35: Making final N
+miniTestb320.sk:35: Making final T
+miniTestb320.sk:35: Making final N
+miniTestb320.sk:35: Making final T
+miniTestb320.sk:35: Making final N
+miniTestb320.sk:35: Making final T
+miniTestb320.sk:25: Making final N
+miniTestb320.sk:25: Making final T
+null: Making final N1
+null: Making final T2
+null: Making final N1
+null: Making final T2
+    [0;32m[1655146030.1900 - DEBUG] Running stage SpmdLowLevelCStage[0m
+    [0;32m[1655146030.1940 - DEBUG]    Running visitor FlattenStmtBlocks2[0m
+    [0;32m[1655146030.1941 - DEBUG]    Running visitor SplitAssignFromVarDef[0m
+    [0;32m[1655146030.1960 - DEBUG]    Running visitor EliminateComplexForLoops[0m
+    [0;32m[1655146030.1970 - DEBUG] Running stage 'lowering' -- Lower for SKETCH backend[0m
+    [0;32m[1655146030.2050 - DEBUG] Running stage 'sten' -- Stencil transformations[0m
+
+//// After stage lowering
+/* BEGIN PACKAGE ANONYMOUS*/
+/*miniTestb320.sk:25*/
+
+void cacheObv1d (int N_7, int T_8, bit[N_7] in_9, bit[N_7 * T_8] f_a, ref bit[N_7 * T_8] _out_b)/*miniTestb320.sk:25*/
+{
+  {
+    {
+      int __sa2_c;
+      if(0 < T_8)/*miniTestb320.sk:25*/
+      {
+        assert ((0 >= 0) && ((T_8 - 1) < T_8)); //miniTestb320.sk:25: Either null pointer or Array out of bounds
+      }
+      for(__sa2_c = 0; __sa2_c < T_8; __sa2_c = __sa2_c + 1)/*Canonical*/
+      {
+        {
+          for(int __sa12 = 0; __sa12 < N_7; __sa12 = __sa12 + 1)/*Canonical*/
+          {
+            _out_b[(N_7 * __sa2_c) + __sa12] = 0;
+          }
+        }
+      }
+      int __sa3_d;
+      if(0 < T_8)/*miniTestb320.sk:25*/
+      {
+        assert ((0 >= 0) && ((T_8 - 1) < T_8)); //miniTestb320.sk:26: Either null pointer or Array out of bounds
+      }
+      for(__sa3_d = 0; __sa3_d < T_8; __sa3_d = __sa3_d + 1)/*Canonical*/
+      {
+        {
+          for(int __sa13 = 0; __sa13 < N_7; __sa13 = __sa13 + 1)/*Canonical*/
+          {
+            _out_b[(N_7 * __sa3_d) + __sa13] = 0;
+          }
+        }
+      }
+      int i_e;
+      if(0 < T_8)/*miniTestb320.sk:27*/
+      {
+        assert ((0 >= 0) && ((T_8 - 1) < T_8)); //miniTestb320.sk:29: Array out of bounds
+        assert ((0 >= 0) && ((N_7 - 1) < N_7)); //miniTestb320.sk:29: Array out of bounds
+        assert ((0 >= 0) && ((T_8 - 1) < T_8)); //miniTestb320.sk:29: Array out of bounds
+        assert ((0 >= 0) && ((N_7 - 1) < N_7)); //miniTestb320.sk:29: Array out of bounds
+        assert ((0 >= 0) && ((N_7 - 1) < N_7)); //miniTestb320.sk:29: Either null pointer or Array out of bounds
+      }
+      for(i_e = 0; i_e < T_8; i_e = i_e + 1)/*Canonical*/
+      {
+        int j_11;
+        for(j_11 = 0; j_11 < N_7; j_11 = j_11 + 1)/*Canonical*/
+        {
+          _out_b[(N_7 * i_e) + j_11] = (in_9[j_11]) ^ (f_a[(N_7 * i_e) + j_11]);
+        }
+      }
+      return;
+    }
+  }
+}
+/*miniTestb320.sk:35*/
+
+void cacheObv1dSK (int N_7, int T_8, bit[N_7] in_9, bit[N_7 * T_8] f_a, ref bit[N_7 * T_8] _out_b)  implements cacheObv1d/*miniTestb320.sk:35*/
+{
+  {
+    {
+      int __sa0_5;
+      if(0 < T_8)/*miniTestb320.sk:35*/
+      {
+        assert ((0 >= 0) && ((T_8 - 1) < T_8)); //miniTestb320.sk:35: Either null pointer or Array out of bounds
+      }
+      for(__sa0_5 = 0; __sa0_5 < T_8; __sa0_5 = __sa0_5 + 1)/*Canonical*/
+      {
+        {
+          for(int __sa10 = 0; __sa10 < N_7; __sa10 = __sa10 + 1)/*Canonical*/
+          {
+            _out_b[(N_7 * __sa0_5) + __sa10] = 0;
+          }
+        }
+      }
+      int __sa1_6;
+      if(0 < T_8)/*miniTestb320.sk:35*/
+      {
+        assert ((0 >= 0) && ((T_8 - 1) < T_8)); //miniTestb320.sk:37: Either null pointer or Array out of bounds
+      }
+      for(__sa1_6 = 0; __sa1_6 < T_8; __sa1_6 = __sa1_6 + 1)/*Canonical*/
+      {
+        {
+          for(int __sa11 = 0; __sa11 < N_7; __sa11 = __sa11 + 1)/*Canonical*/
+          {
+            _out_b[(N_7 * __sa1_6) + __sa11] = 0;
+          }
+        }
+      }
+      forLoop_t11@ANONYMOUS(0, T_8, T_8, N_7, in_9, f_a, _out_b);
+      return;
+    }
+  }
+}
+/*miniTestb320.sk:4*/
+
+void forLoop_t11 (int low_14, int high_15, int T2_16, int N1_17, bit[N1_17] in3_0_18, bit[N1_17 * T2_16] f4_1_19, ref bit[N1_17 * T2_16] out0_1a)/*miniTestb320.sk:4*/
+{
+  {
+    {
+      assert (T2_16 >= 0); //Negative array lengths not allowed T2_16  miniTestb320.sk:4
+      assert (N1_17 >= 0); //Negative array lengths not allowed N1_17  miniTestb320.sk:4
+      bit[N1_17 * T2_16] f4_1b;
+      if(0 < T2_16)/*null*/
+      {
+        assert ((0 >= 0) && ((T2_16 - 1) < T2_16)); //miniTestb320.sk:4: Array out of bounds
+        assert ((0 >= 0) && ((T2_16 - 1) < T2_16)); //miniTestb320.sk:4: Either null pointer or Array out of bounds
+      }
+      for(int __sa8 = 0; __sa8 < T2_16; __sa8 = __sa8 + 1)/*Canonical*/
+      {
+        {
+          for(int __sa14 = 0; __sa14 < N1_17; __sa14 = __sa14 + 1)/*Canonical*/
+          {
+            f4_1b[(N1_17 * __sa8) + __sa14] = f4_1_19[(N1_17 * __sa8) + __sa14];
+          }
+        }
+      }
+      assert (N1_17 >= 0); //Negative array lengths not allowed N1_17  miniTestb320.sk:4
+      bit[N1_17] in3_1c;
+      in3_1c = in3_0_18;
+      if(low_14 < high_15)/*miniTestb320.sk:5*/
+      {
+        int i_1d;
+        i_1d = low_14;
+        int T_1e;
+        T_1e = T2_16;
+        int N_1f;
+        N_1f = N1_17;
+        bit _has_out__20;
+        _has_out__20 = 0;
+        assert (N_1f >= N1_17); //Array Length Mismatch miniTestb320.sk:43
+        assert (T_1e >= T2_16); //Array Length Mismatch miniTestb320.sk:43
+        assert (N_1f >= N1_17); //Array Length Mismatch miniTestb320.sk:43
+        assert (T_1e == T2_16); //Array Length Mismatch miniTestb320.sk:43
+        assert (N_1f == N1_17); //Array Length Mismatch miniTestb320.sk:43
+        forLoop_t22@ANONYMOUS(0, N_1f, T_1e, i_1d, N_1f, in3_1c, f4_1b, out0_1a);
+        int low_14_s4;
+        low_14_s4 = low_14 + 1;
+        forLoop_t11@ANONYMOUS(low_14_s4, high_15, T2_16, N1_17, in3_1c, f4_1b, out0_1a);
+      }
+    }
+  }
+}
+/*miniTestb320.sk:4*/
+
+void forLoop_t13 (int low_32, int high_33, int N7_34, ref int out6_35)/*miniTestb320.sk:4*/
+{
+  {
+    {
+      if(low_32 < high_33)/*miniTestb320.sk:5*/
+      {
+        int i_36;
+        i_36 = low_32;
+        int N_37;
+        N_37 = N7_34;
+        bit _has_out__38;
+        _has_out__38 = 0;
+        forLoop_t24@ANONYMOUS(0, N_37, out6_35);
+        int low_32_s6;
+        low_32_s6 = low_32 + 1;
+        forLoop_t13@ANONYMOUS(low_32_s6, high_33, N7_34, out6_35);
+      }
+    }
+  }
+}
+/*miniTestb320.sk:4*/
+
+void forLoop_t22 (int low_23, int high_24, int T2_25, int i5_26, int N1_27, bit[N1_27] in3_0_28, bit[N1_27 * T2_25] f4_1_29, ref bit[N1_27 * T2_25] out0_2a)/*miniTestb320.sk:4*/
+{
+  {
+    {
+      assert (T2_25 >= 0); //Negative array lengths not allowed T2_25  miniTestb320.sk:4
+      assert (N1_27 >= 0); //Negative array lengths not allowed N1_27  miniTestb320.sk:4
+      bit[N1_27 * T2_25] f4_2b;
+      if(0 < T2_25)/*null*/
+      {
+        assert ((0 >= 0) && ((T2_25 - 1) < T2_25)); //miniTestb320.sk:4: Array out of bounds
+        assert ((0 >= 0) && ((T2_25 - 1) < T2_25)); //miniTestb320.sk:4: Either null pointer or Array out of bounds
+      }
+      for(int __sa9 = 0; __sa9 < T2_25; __sa9 = __sa9 + 1)/*Canonical*/
+      {
+        {
+          for(int __sa15 = 0; __sa15 < N1_27; __sa15 = __sa15 + 1)/*Canonical*/
+          {
+            f4_2b[(N1_27 * __sa9) + __sa15] = f4_1_29[(N1_27 * __sa9) + __sa15];
+          }
+        }
+      }
+      assert (N1_27 >= 0); //Negative array lengths not allowed N1_27  miniTestb320.sk:4
+      bit[N1_27] in3_2c;
+      in3_2c = in3_0_28;
+      if(low_23 < high_24)/*miniTestb320.sk:5*/
+      {
+        int j_2d;
+        j_2d = low_23;
+        int T_2e;
+        T_2e = T2_25;
+        int i_2f;
+        i_2f = i5_26;
+        int N_30;
+        N_30 = N1_27;
+        bit _has_out__31;
+        _has_out__31 = 0;
+        assert ((i_2f >= 0) && (i_2f < T2_25)); //miniTestb320.sk:40: Array out of bounds
+        assert ((j_2d >= 0) && (j_2d < N1_27)); //miniTestb320.sk:40: Array out of bounds
+        assert ((i_2f >= 0) && (i_2f < T2_25)); //miniTestb320.sk:40: Array out of bounds
+        assert ((j_2d >= 0) && (j_2d < N1_27)); //miniTestb320.sk:40: Array out of bounds
+        assert ((j_2d >= 0) && (j_2d < N1_27)); //miniTestb320.sk:40: Either null pointer or Array out of bounds
+        out0_2a[(N1_27 * i_2f) + j_2d] = (in3_2c[j_2d]) ^ (f4_2b[(N1_27 * i_2f) + j_2d]);
+        int low_23_s5;
+        low_23_s5 = low_23 + 1;
+        forLoop_t22@ANONYMOUS(low_23_s5, high_24, T2_25, i5_26, N1_27, in3_2c, f4_2b, out0_2a);
+      }
+    }
+  }
+}
+/*miniTestb320.sk:4*/
+
+void forLoop_t24 (int low_39, int high_3a, ref int out6_3b)/*miniTestb320.sk:4*/
+{
+  {
+    {
+      if(low_39 < high_3a)/*miniTestb320.sk:5*/
+      {
+        int j_3c;
+        j_3c = low_39;
+        bit _has_out__3d;
+        _has_out__3d = 0;
+        out6_3b = out6_3b + 1;
+        int low_39_s7;
+        low_39_s7 = low_39 + 1;
+        forLoop_t24@ANONYMOUS(low_39_s7, high_3a, out6_3b);
+      }
+    }
+  }
+}
+/*miniTestb320.sk:12*/
+
+void test (int N_21)/*miniTestb320.sk:12*/
+{
+  {
+    {
+      int out_22;
+      out_22 = 0;
+      forLoop_t13@ANONYMOUS(0, N_21, N_21, out_22);
+      assert (out_22 == (N_21 * N_21)); //Assert at miniTestb320.sk:21 (2)
+    }
+  }
+}
+/*miniTestb320.sk:12*/
+
+void test__Wrapper (int N_13)  implements test__WrapperNospec/*miniTestb320.sk:12*/
+{
+  {
+    {
+      test@ANONYMOUS(N_13);
+    }
+  }
+}
+/*miniTestb320.sk:12*/
+
+void test__WrapperNospec (int N_13)/*miniTestb320.sk:12*/
+{
+  {
+    {
+    }
+  }
+}
+/* END PACKAGE ANONYMOUS*/
+------------------------------
+
+[SATBackend] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[SATBackend] MAX LOOP UNROLLING = 16
+[SATBackend] MAX FUNC INLINING  = 16
+[SATBackend] After prog.accept(partialEval)
+[SATBackend] OFILE = null
+resolved cegis to path /Users/harshit/Google Drive/Projects/2022/Program Synthesis/sketch-1.7.6/sketch-backend/src/SketchSolver/cegis
+    [0;32m[1655146030.3290 - DEBUG] executing /Users/harshit/Google Drive/Projects/2022/Program Synthesis/sketch-1.7.6/sketch-backend/src/SketchSolver/cegis --bnd-inbits 2 --boundmode CALLNAME --verbosity 5 --print-version -simiters 4 -synth MINI -verif MINI --assumebcheck --bnd-inline-amnt 16 -angelictupledepth 1 -srctupledepth 2 -sprandbias 1 -numericalsolvermode ONLY_SMOOTHING -numtries 1 -conflictcutoff 1 -maxrestarts 10 -costoption 1 -o /Users/harshit/.sketch/tmp/miniTestb320.sk/solution0-0 /Users/harshit/.sketch/tmp/miniTestb320.sk/input0.tmp[0m
+[SATBackend] Launching: /Users/harshit/Google Drive/Projects/2022/Program Synthesis/sketch-1.7.6/sketch-backend/src/SketchSolver/cegis --bnd-inbits 2 --boundmode CALLNAME --verbosity 5 --print-version -simiters 4 -synth MINI -verif MINI --assumebcheck --bnd-inline-amnt 16 -angelictupledepth 1 -srctupledepth 2 -sprandbias 1 -numericalsolvermode ONLY_SMOOTHING -numtries 1 -conflictcutoff 1 -maxrestarts 10 -costoption 1 -o /Users/harshit/.sketch/tmp/miniTestb320.sk/solution0-0 /Users/harshit/.sketch/tmp/miniTestb320.sk/input0.tmp 
+starting command line: [/Users/harshit/Google Drive/Projects/2022/Program Synthesis/sketch-1.7.6/sketch-backend/src/SketchSolver/cegis, --bnd-inbits, 2, --boundmode, CALLNAME, --verbosity, 5, --print-version, -simiters, 4, -synth, MINI, -verif, MINI, --assumebcheck, --bnd-inline-amnt, 16, -angelictupledepth, 1, -srctupledepth, 2, -sprandbias, 1, -numericalsolvermode, ONLY_SMOOTHING, -numtries, 1, -conflictcutoff, 1, -maxrestarts, 10, -costoption, 1, -o, /Users/harshit/.sketch/tmp/miniTestb320.sk/solution0-0, /Users/harshit/.sketch/tmp/miniTestb320.sk/input0.tmp]
+Overriding inputs with 2
+boundmode = CALLNAME
+ synth = |MINI|
+ verif = |MINI|
+assuming  bounds checks
+Unknown flag -numericalsolvermode
+Unknown flag -numtries
+Unknown flag -conflictcutoff
+Unknown flag -maxrestarts
+Unknown flag -costoption
+SOLVER RAND SEED = 1655146030
+ optimization level = 6
+Reading SKETCH Program in File /Users/harshit/.sketch/tmp/miniTestb320.sk/input0.tmp
+* before  EVERYTHING: test__WrapperNospec::SPEC nodes = 1	 test__Wrapper::SKETCH nodes = 3
+ INBITS = 2
+ CBITS  = 5
+ input_ints = 1 	 input_bits = 0
+ Inlining amount = 16
+ Inlining functions in the sketch.
+ Inlining functions in the spec.
+* Final Problem size: Problem nodes = 504
+  # OF CONTROLS:    0
+ control_ints = 0 	 control_bits = 0
+inputSize = 2	ctrlSize = 0
+Random seeds = 1
+BEG CHECK
+ * After optims it became = 504 was 504
+c# %assign: 12 clauses: 9 learn: 0 restart: 0 decision: 0 propagated: 1
+ reduced size from 504 to 485
+After all optim
+ Removed 551 clauses
+DECISIONS START = 0
+c# %assign: 15 clauses: 3411 learn: 2 restart: 1 decision: 508 propagated: 1372
+END CHECK
+********  0	ftime= 0	ctime= 0.005
+ *GOT THE CORRECT ANSWER IN 1 iterations.
+ *FIND TIME 0 CHECK TIME 0.005 TOTAL TIME 0.005
+VALUES 
+RESULT = 2  
+* before  EVERYTHING: cacheObv1d::SPEC nodes = 1660	 cacheObv1dSK::SKETCH nodes = 111
+ INBITS = 2
+ CBITS  = 5
+ input_ints = 4 	 input_bits = 0
+ Inlining amount = 16
+ Inlining functions in the sketch.
+ Inlining functions in the spec.
+* Final Problem size: Problem nodes = 50338
+  # OF CONTROLS:    0
+ control_ints = 0 	 control_bits = 0
+inputSize = 14	ctrlSize = 0
+Random seeds = 1
+BEG CHECK
+ * After optims it became = 48217 was 50338
+c# %assign: 12 clauses: 9 learn: 0 restart: 0 decision: 0 propagated: 1
+ reduced size from 48217 to 33767
+c# %assign: 12 clauses: 9 learn: 0 restart: 0 decision: 0 propagated: 1
+ reduced size from 33767 to 20268
+c# %assign: 12 clauses: 9 learn: 0 restart: 0 decision: 0 propagated: 1
+ reduced size from 20268 to 19598
+ Removed 12 clauses
+DECISIONS START = 0
+c# %assign: 88 clauses: 0 learn: 0 restart: 1 decision: 2 propagated: 9
+c# %assign: 12 clauses: 9 learn: 0 restart: 0 decision: 0 propagated: 1
+ reduced size from 19598 to 18928
+After all optim
+ Removed 0 clauses
+DECISIONS START = 0
+c# %assign: 96 clauses: 144111 learn: 88 restart: 1 decision: 223 propagated: 466731
+ * After optims it became = 504 was 504
+c# %assign: 12 clauses: 9 learn: 0 restart: 0 decision: 0 propagated: 1
+ reduced size from 504 to 485
+After all optim
+ Removed 551 clauses
+DECISIONS START = 0
+c# %assign: 15 clauses: 3411 learn: 2 restart: 1 decision: 508 propagated: 1372
+END CHECK
+********  0	ftime= 0	ctime= 999.428
+ *GOT THE CORRECT ANSWER IN 1 iterations.
+ *FIND TIME 0 CHECK TIME 999.428 TOTAL TIME 999.428
+VALUES 
+RESULT = 2  
+**ROUND 0 : 0 Round time:  1000.05 ms 
+RNDDEG = -1
+return 0
+
+----- Statistics -----
+Total elapsed time (ms):  1000.08
+Model building time (ms): 0.033
+Solution time (ms):       1000.05
+Max virtual mem (bytes):  0
+Max resident mem (bytes): 0
+Max private mem (bytes):  0
+ALL CORRECT
+[SATBackend] Stats for last run:
+      [solution stats]
+      successful? ---------------------> true
+      elapsed time (s) ----------------> 1.094
+      model building time (s) ---------> 0.0
+      solution time (s) ---------------> 1.0
+      max memory usage (MiB) ----------> 0.0
+      [SAT-specific solution stats]
+      initial number of nodes ---------> 3
+      number of nodes after opts ------> 504
+      number of controls --------------> 0
+      total number of control bits ----> 0
+
+[SATBackend] Solver exit value: 0
+    [0;32m[1655146031.4290 - DEBUG] Running stage 'subst' -- Substitute a solution (assignment to ??'s) into the sketch[0m
+    [0;32m[1655146031.4310 - DEBUG] Running stage 'cleanup' -- Clean up sketch after substitutions for readability[0m
+    [0;32m[1655146031.4560 - DEBUG] Running stage 'outputc' -- Output C code (to console or file)[0m
+    [0;33m[1655146031.4700 - NOTE] Wrote test harness to ./miniTestb320_test.cpp[0m
+[SKETCH] DONE
+Total time = 1569

@@ -1,0 +1,19 @@
+harness void polynomial_approximation(int x){
+   
+   int n = 0;
+   int f1 = x*x*x + x; 
+   int f2 = x*x*x; 
+   int f3 = ??*x*x*x + ??*x*x + ??*x + ??;
+   int t = 0;
+   int e = 5; 
+   if(x<=t)
+   {
+      n =  f3 - f1;
+   }
+   else
+   {
+      n = f3 - f2;
+   }
+   assert(n<=e);
+}
+

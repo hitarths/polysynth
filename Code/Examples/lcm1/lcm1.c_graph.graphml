@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="text" for="edge" attr.name="text" attr.type="string" />
+  <key id="name" for="node" attr.name="name" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="0">
+      <data key="name">(a &gt;= 0 and b &gt;= 0)</data>
+    </node>
+    <node id="1">
+      <data key="name" />
+    </node>
+    <node id="2">
+      <data key="name" />
+    </node>
+    <node id="3">
+      <data key="name" />
+    </node>
+    <node id="4">
+      <data key="name" />
+    </node>
+    <node id="5">
+      <data key="name">((x * u) + (y * v)) == (a * b)</data>
+    </node>
+    <node id="6">
+      <data key="name" />
+    </node>
+    <node id="7">
+      <data key="name">((x * u) + (y * v)) == (a * b)</data>
+    </node>
+    <node id="8">
+      <data key="name" />
+    </node>
+    <node id="9">
+      <data key="name" />
+    </node>
+    <node id="10">
+      <data key="name" />
+    </node>
+    <node id="11">
+      <data key="name" />
+    </node>
+    <node id="12">
+      <data key="name">((x * u) + (y * v)) == (a * b)</data>
+    </node>
+    <node id="13">
+      <data key="name" />
+    </node>
+    <node id="14">
+      <data key="name" />
+    </node>
+    <node id="15">
+      <data key="name" />
+    </node>
+    <node id="16">
+      <data key="name" />
+    </node>
+    <node id="17">
+      <data key="name" />
+    </node>
+    <node id="18">
+      <data key="name">1 &gt;= 0</data>
+    </node>
+    <edge source="0" target="1" id="x = a">
+      <data key="text">x = a</data>
+    </edge>
+    <edge source="1" target="2" id="y = b">
+      <data key="text">y = b</data>
+    </edge>
+    <edge source="2" target="3" id="u = b">
+      <data key="text">u = b</data>
+    </edge>
+    <edge source="3" target="4" id="v = 0">
+      <data key="text">v = 0</data>
+    </edge>
+    <edge source="4" target="5" id="">
+      <data key="text" />
+    </edge>
+    <edge source="5" target="6" id="1 &gt;= 0">
+      <data key="text">1 &gt;= 0</data>
+    </edge>
+    <edge source="5" target="16" id="">
+      <data key="text" />
+    </edge>
+    <edge source="5" target="17" id="Not(1 &gt;= 0)">
+      <data key="text">Not(1 &gt;= 0)</data>
+    </edge>
+    <edge source="6" target="7" id="">
+      <data key="text" />
+    </edge>
+    <edge source="7" target="8" id="1 &gt;= 0">
+      <data key="text">1 &gt;= 0</data>
+    </edge>
+    <edge source="7" target="10" id="">
+      <data key="text" />
+    </edge>
+    <edge source="7" target="11" id="Not(1 &gt;= 0)">
+      <data key="text">Not(1 &gt;= 0)</data>
+    </edge>
+    <edge source="8" target="9" id="x = (_a_0_)*(1)+(_a_1_)*(y)+(_a_2_)*(x)">
+      <data key="text">x = (_a_0_)*(1)+(_a_1_)*(y)+(_a_2_)*(x)</data>
+    </edge>
+    <edge source="9" target="10" id="v = (v + u)">
+      <data key="text">v = (v + u)</data>
+    </edge>
+    <edge source="11" target="12" id="">
+      <data key="text" />
+    </edge>
+    <edge source="12" target="13" id="1 &gt;= 0">
+      <data key="text">1 &gt;= 0</data>
+    </edge>
+    <edge source="12" target="15" id="">
+      <data key="text" />
+    </edge>
+    <edge source="12" target="16" id="Not(1 &gt;= 0)">
+      <data key="text">Not(1 &gt;= 0)</data>
+    </edge>
+    <edge source="13" target="14" id="y = (y - x)">
+      <data key="text">y = (y - x)</data>
+    </edge>
+    <edge source="14" target="15" id="u = (_a_3_)*(1)+(_a_4_)*(v)+(_a_5_)*(u)">
+      <data key="text">u = (_a_3_)*(1)+(_a_4_)*(v)+(_a_5_)*(u)</data>
+    </edge>
+    <edge source="17" target="18" id="">
+      <data key="text" />
+    </edge>
+  </graph>
+</graphml>
