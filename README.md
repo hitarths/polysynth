@@ -11,7 +11,7 @@ We have provided these instructions for Linux machine (e.g., Ubuntu). Most of th
 
 3. Change your directory to the root folder of cloned repository and install all the required packages by running the following command: 
 
-	`pip install lark==1.1.2 z3-solver==4.11.2.0 sympy==1.11.1`
+	pip install lark==1.1.2 z3-solver==4.11.2.0 sympy==1.11.1
 
 Once you are done with the basic setup, we are ready to run our code on any example.
 
@@ -28,6 +28,7 @@ Follow the following steps to run the synthesizer on a given benchmark:
 
 4. Suppose you want to run the synthesizer for the example `Closest_cube_root`, then you would run the following command:
 `python3 synthesizer.py --filename Examples/Closest_cube_root/closest_cube_root.c`
+
 
 
 ## Options for the `synthesizer.py`
@@ -50,36 +51,47 @@ Few other technical arguments that can be passed are given in the following. In 
 
 First install the Racket with following commands:
 
-	`sudo add-apt-repository ppa:plt/racket`
+		sudo add-apt-repository ppa:plt/racket
 
-	`sudo apt update`
+		sudo apt update
 
-	`sudo apt-get install racket`
+		sudo apt-get install racket
 
 Now, install Rosette:
-	`raco pkg install rosette`		
+
+		raco pkg install rosette
 
 Now, you should be able to run racket with command `racket`.
 
 For Sketch, we have already provided the application. But, you still have to install Java environment using the following command:
 
-	`sudo apt-get install default-jre -y`
+		sudo apt-get install default-jre -y
 
-## How to run Rosette and Sketch on the benchmarks?
+## How to run Polysynth, Rosette and Sketch on the benchmarks?
 
 We have provided the shell script to run Rosette/Sketch on single example as well as on all the supported benchmarks.
 
 1. To run a single benchmark on Rosette:
-	`sh run_rosette_one_example.sh`
+
+		./run_rosette_one_example.sh
 
 2. To run a single benchmark on Sketch:
-	`sh run_sketch_one_example.sh`
+		./run_sketch_one_example.sh
 
-3. To run a single benchmark on Rosette:
-	`sh run_rosette_all_benchmarks.sh`
+3. To run a single benchmark on PolySynth:
 
-4. To run a all supported benchmark on Sketch:
-	`sh run_sketch_all_benchmarks.sh`
+		./run_polysynth_one_example.sh
+
+4. To run a all supported benchmark benchmark on PolySynth:
+		./run_polysynth_all_benchmarks.sh
+
+5. To run a all supported benchmark benchmark on Rosette:
+
+		sh run_rosette_all_benchmarks.sh
+
+6. To run a all supported benchmark on Sketch:
+
+		sh run_sketch_all_benchmarks.sh
 
 
 You can open these shell file to check the full commands.
