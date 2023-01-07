@@ -75,6 +75,7 @@ We have provided the shell script to run Rosette/Sketch on single example as wel
 		./run_rosette_one_example.sh
 
 2. To run a single benchmark on Sketch:
+
 		./run_sketch_one_example.sh
 
 3. To run a single benchmark on PolySynth:
@@ -82,6 +83,7 @@ We have provided the shell script to run Rosette/Sketch on single example as wel
 		./run_polysynth_one_example.sh
 
 4. To run a all supported benchmark benchmark on PolySynth:
+
 		./run_polysynth_all_benchmarks.sh
 
 5. To run a all supported benchmark benchmark on Rosette:
