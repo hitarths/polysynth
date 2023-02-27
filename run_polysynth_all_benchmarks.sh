@@ -15,9 +15,9 @@ do
 cmd="timeout -k $KILL_TIMEOUT $TIMEOUT python3 Code/synthesizer.py --filename benchmarks-polysynth/$name.c --target ./polysynth-outputs/$name/"
 echo "Running $cmd..."
 
-start_time=`date %s.%3N`
+start_time=`date +%s.%3N`
 output=$(eval $cmd || echo "Timeout")
-end_time=`date %s.%3N`
+end_time=`date +%s.%3N`
 time_taken=`echo $end_time - $start_time | bc`
 
 if [[ "$output" == "Timeout" ]];

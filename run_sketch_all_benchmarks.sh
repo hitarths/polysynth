@@ -16,9 +16,9 @@ do
 OUTPUT_FILE_FOR_SKECTH="sketch-outputs/$name.output"
 cmd="timeout -k $KILL_TIMEOUT $TIMEOUT ./external-tools/sketch-1.7.6/sketch-frontend/sketch --fe-fpencoding AS_FIXPOINT benchmarks-sketch/$name"
 echo "Running $cmd..."
-start_time=`date %s.%3N`
+start_time=`date +%s.%3N`
 $cmd > $OUTPUT_FILE_FOR_SKECTH 2>&1
-end_time=`date %s.%3N`
+end_time=`date +%s.%3N`
 time_taken=`echo $end_time - $start_time | bc`
 
 
