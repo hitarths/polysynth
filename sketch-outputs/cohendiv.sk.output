@@ -1,0 +1,6 @@
+SKETCH version 1.7.6
+Benchmark = benchmarks-sketch/cohendiv.sk
+benchmarks-sketch/cohendiv.sk:70:1: expecting EOF, found '['
+    [0;31m[1677506091.6060 - ERROR] [SKETCH] Program Parse Error: could not parse program[0m
+    [0;32m[1677506091.6170 - DEBUG] [SKETCH] stack trace written to file: /Users/hitarth/.sketch/tmp/stacktrace.txt[0m
+Total time = 212

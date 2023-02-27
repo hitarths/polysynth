@@ -1,0 +1,31 @@
+SKETCH version 1.7.6
+Benchmark = benchmarks-sketch/polynomial_approximation.sk
+/* BEGIN PACKAGE ANONYMOUS*/
+/*polynom..mation.sk:1*/
+
+void polynomial_approximation (int x)/*polynom..mation.sk:1*/
+{
+  int n = 0;
+  if(x <= 0)/*polynom..mation.sk:9*/
+  {
+    n = 0 - (((x * x) * x) + x);
+  }
+  else
+  {
+    n = 0 - ((x * x) * x);
+  }
+  assert (n <= 5); //Assert at polynom..mation.sk:17 (2)
+}
+/*polynom..mation.sk:1*/
+
+void polynomial_approximation__Wrapper (int x)  implements polynomial_approximation__WrapperNospec/*polynom..mation.sk:1*/
+{
+  polynomial_approximation(x);
+}
+/*polynom..mation.sk:1*/
+
+void polynomial_approximation__WrapperNospec (int x)/*polynom..mation.sk:1*/
+{ }
+/* END PACKAGE ANONYMOUS*/
+[SKETCH] DONE
+Total time = 237

@@ -382,7 +382,12 @@ def solve_with_abstraction_refinement(QP_dict, QP_with_Handelman_dict, with_abst
                             refresh = True
                             break
                     if not refresh:
-                        raise Exception("Final Result: UNSAT")
+                        if not True in with_handelman_dict.values():
+                            raise Exception("Final Result: UNSAT")
+                        else:
+                            for cond_index in with_handelman_dict:
+                                with_handelman_dict[cond_index] = False
+                            refresh = True
                 if refresh:
                     print("Reinitializing the solver...")
                     print("Using Handelman for {} constraint pairs...".format(sum(with_handelman_dict)))

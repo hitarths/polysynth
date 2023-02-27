@@ -1,0 +1,12 @@
+SKETCH version 1.7.6
+Benchmark = benchmarks-sketch/mannadiv_ind.sk
+  UNSATISFIABLE ASSERTION mannadiv_ind.sk:7: This loop was unrolled 8 times, but apparently that was not enough. Use the --bnd-unroll-amnt flag for better results.
+
+*** Rejected
+    [0;31m[1677506512.6210 - ERROR] [SKETCH] Sketch Not Resolved Error:   UNSATISFIABLE ASSERTION mannadiv_ind.sk:7: This loop was unrolled 8 times, but apparently that was not enough. Use the --bnd-unroll-amnt flag for better results.
+
+*** Rejected
+The sketch could not be resolved.[0m
+    [0;32m[1677506512.6270 - DEBUG] [SKETCH] stack trace written to file: /Users/hitarth/.sketch/tmp/stacktrace.txt[0m
+    [0;32m[1677506512.6271 - DEBUG] Backend solver input file at /Users/hitarth/.sketch/tmp/mannadiv_ind.sk/input0.tmp[0m
+Total time = 187

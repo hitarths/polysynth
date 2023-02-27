@@ -1,0 +1,37 @@
+SKETCH version 1.7.6
+Benchmark = benchmarks-sketch/prodbin.sk
+/* BEGIN PACKAGE ANONYMOUS*/
+/*prodbin.sk:3*/
+
+void prodbin (int a, int b)/*prodbin.sk:3*/
+{
+  assume ((a >= 0) && (b >= 0)): "Assume at prodbin.sk:4"; //Assume at prodbin.sk:4
+  int x = a;
+  int y = b;
+  int z = 0;
+  while(y != 0)
+  {
+    assert ((z + (x * y)) == (a * b)); //Assert at prodbin.sk:11 (4)
+    if((y % 2) == 1)/*prodbin.sk:12*/
+    {
+      z = z + x;
+      y = y - 1;
+    }
+    x = 2 * x;
+    y = y / 2;
+  }
+  assert (z == (a * b)); //Assert at prodbin.sk:20 (2)
+}
+/*prodbin.sk:3*/
+
+void prodbin__Wrapper (int a, int b)  implements prodbin__WrapperNospec/*prodbin.sk:3*/
+{
+  prodbin(a, b);
+}
+/*prodbin.sk:3*/
+
+void prodbin__WrapperNospec (int a, int b)/*prodbin.sk:3*/
+{ }
+/* END PACKAGE ANONYMOUS*/
+[SKETCH] DONE
+Total time = 2015

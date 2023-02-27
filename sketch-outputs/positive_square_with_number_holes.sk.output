@@ -1,0 +1,25 @@
+SKETCH version 1.7.6
+Benchmark = benchmarks-sketch/positive_square_with_number_holes.sk
+/* BEGIN PACKAGE ANONYMOUS*/
+/*positiv.._holes.sk:1*/
+
+void postive_squares (int x_0, int n)/*positiv.._holes.sk:1*/
+{
+  int x = x_0;
+  assume (x_0 <= 100): "Assume at positiv.._holes.sk:2"; //Assume at positiv.._holes.sk:2
+  x = ((n - 5) * n) + 6;
+  assert (x >= 0); //Assert at positiv.._holes.sk:4 (2)
+}
+/*positiv.._holes.sk:1*/
+
+void postive_squares__Wrapper (int x, int n)  implements postive_squares__WrapperNospec/*positiv.._holes.sk:1*/
+{
+  postive_squares(x, n);
+}
+/*positiv.._holes.sk:1*/
+
+void postive_squares__WrapperNospec (int x, int n)/*positiv.._holes.sk:1*/
+{ }
+/* END PACKAGE ANONYMOUS*/
+[SKETCH] DONE
+Total time = 166
