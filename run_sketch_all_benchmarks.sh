@@ -2,14 +2,6 @@ TIMEOUT=60 # 60 seconds; Increase it as required
 KILL_TIMEOUT=10  # Kill the process after 10 seconds if not exited after sending terminate signal
 OUTPUT_FILE=sketch-outputs.csv
 
-# if [[ $OSTYPE == 'darwin'* ]]; then
-#   # 'macOS'
-#   alias gettime='gdate +%s.%3N'
-# else
-#   alias gettime='date %s.%3N'
-# fi
-
-
 echo "Benchmark,Result,Time" > $OUTPUT_FILE
 for name in archimedes.sk closest_cube_root.sk closest_square_root.sk cohendiv.sk consecutive_cubes.sk euclidex2.sk fermat1.sk fermat2_ind.sk floor_square_root.sk friction.sk if_else_trivial.sk lcm1.sk mannadiv_carre.sk mannadiv_cube.sk mannadiv_ind.sk petter3.sk petter5.sk polynomial_approximation.sk positive_square_with_holes.sk positive_square_with_number_holes.sk prodbin.sk square_roots_appro.sk wensley_division.sk
 do
