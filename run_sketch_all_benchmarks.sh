@@ -2,12 +2,12 @@ TIMEOUT=60 # 60 seconds; Increase it as required
 KILL_TIMEOUT=10  # Kill the process after 10 seconds if not exited after sending terminate signal
 OUTPUT_FILE=sketch-outputs.csv
 
-if [[ $OSTYPE == 'darwin'* ]]; then
-  # 'macOS'
-  alias gettime='gdate +%s.%3N'
-else
-  alias gettime='date %s.%3N'
-fi
+# if [[ $OSTYPE == 'darwin'* ]]; then
+#   # 'macOS'
+#   alias gettime='gdate +%s.%3N'
+# else
+#   alias gettime='date %s.%3N'
+# fi
 
 
 echo "Benchmark,Result,Time" > $OUTPUT_FILE
@@ -16,9 +16,9 @@ do
 OUTPUT_FILE_FOR_SKECTH="sketch-outputs/$name.output"
 cmd="timeout -k $KILL_TIMEOUT $TIMEOUT ./external-tools/sketch-1.7.6/sketch-frontend/sketch --fe-fpencoding AS_FIXPOINT benchmarks-sketch/$name"
 echo "Running $cmd..."
-start_time=`gettime`
+start_time=`date %s.%3N`
 $cmd > $OUTPUT_FILE_FOR_SKECTH 2>&1
-end_time=`gettime`
+end_time=`date %s.%3N`
 time_taken=`echo $end_time - $start_time | bc`
 
 

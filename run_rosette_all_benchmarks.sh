@@ -2,12 +2,12 @@ TIMEOUT=60 # 60 seconds; Increase it as required
 KILL_TIMEOUT=10  # Kill the process after 10 seconds if not exited after sending terminate signal
 OUTPUT_FILE=rosette-outputs.csv
 
-if [[ $OSTYPE == 'darwin'* ]]; then
-  # 'macOS: run `brew install coreutils` to get access to gdate
-  alias gettime='gdate +%s.%3N'
-else
-  alias gettime='date %s.%3N'
-fi
+# if [[ $OSTYPE == 'darwin'* ]]; then
+#   # 'macOS: run `brew install coreutils` to get access to gdate
+#   alias gettime='gdate +%s.%3N'
+# else
+#   alias gettime='date %s.%3N'
+# fi
 
 
 echo "Benchmark,Result,Time (seconds)" > $OUTPUT_FILE, time
@@ -16,9 +16,9 @@ do
 cmd="timeout -k $KILL_TIMEOUT $TIMEOUT racket benchmarks-rosette/$name"
 echo "Running $cmd..."
 
-start_time=`gettime`
+start_time=`date %s.%3N`
 output=$(eval $cmd || echo "Timeout")
-end_time=`gettime`
+end_time=`date %s.%3N`
 time_taken=`expr $end_time - $start_time`
 
 if [ "$output" == "Timeout" ];
