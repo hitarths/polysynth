@@ -3,9 +3,9 @@ KILL_TIMEOUT=10  # Kill the process after 10 seconds if not exited after sending
 OUTPUT_FILE=rosette-outputs.csv
 
 echo "Benchmark,Result,Time (seconds)" > $OUTPUT_FILE
-for name in archimedes.rkt closes_square_root.rkt closest_cube_root.rkt cohendiv.rkt consecutive_cubes.rkt euclidx2.rkt fermat1.rkt fermat2_ind.rkt floor_square_root.rkt friction.rkt dijkstra.rkt lcm1.rkt mannadiv_carre.rkt mannadiv_cube.rkt mannadiv_in.rkt petter3.rkt petter5.rkt polynomial_approx.rkt positive_square_with_hole.rkt positive_square_with_number_hole.rkt square_root_floor.rkt wensley_division.rkt
+for name in archimedes berkeley closest_cube_root closest_square_root cohendiv consecutive_cubes dijkstra_ind dijsktra euclidex1 euclidex2 fermat1 fermat2_ind firefly floor_square_root friction illinois lcm1 mannadiv_Carre mannadiv_Cube mannadiv_ind mesi moesi petter10 petter3 petter5 polynomial_approx positive_square_with_holes positive_square_with_number_holes readerswriters square_roots wensley_division
 do
-cmd="timeout -k $KILL_TIMEOUT $TIMEOUT racket benchmarks-rosette/$name"
+cmd="timeout -k $KILL_TIMEOUT $TIMEOUT racket benchmarks-rosette/$name.rkt"
 echo "Running $cmd..."
 
 start_time=`date +%s.%3N`

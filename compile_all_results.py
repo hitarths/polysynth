@@ -9,12 +9,12 @@ data_dict = dict()
 
 for bench in BENCHMARKS:
 	data_dict[bench.lower()] = {
-	"PolySynth Result": None, 
-	"PolySynth Time": None,
-	"Rosette Result": None, 
-	"Rosette Time" : None,
-	"Sketch Result": None, 
-	"Sketch Time": None}
+	"PolySynth Result": "None", 
+	"PolySynth Time": "None",
+	"Rosette Result": "None", 
+	"Rosette Time" : "None",
+	"Sketch Result": "None", 
+	"Sketch Time": "None"}
 
 
 final_output = "compile-table.csv"
