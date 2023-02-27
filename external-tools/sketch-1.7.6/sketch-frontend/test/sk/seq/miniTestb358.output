@@ -1,6 +1,0 @@
-SKETCH version 1.7.6
-Benchmark = miniTestb358.sk
-    [0;32m[1655146109.7360 - DEBUG] Running stage 'parse' -- Parse the program from a file[0m
-    [0;31m[1655146109.7910 - ERROR] [SKETCH] Program Parse Error: Sketch failed to parse: Bad token [\@10,43]:"\"[0m
-    [0;32m[1655146109.7920 - DEBUG] [SKETCH] stack trace written to file: /Users/harshit/.sketch/tmp/stacktrace.txt[0m
-Total time = 146
