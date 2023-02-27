@@ -1,32 +1,32 @@
 Benchmark,PolySynth Result,PolySynth Time,Rosette Result,Rosette Time,Sketch Result,Sketch Time
-archimedes, SUCCESS, 1.926,,,,
-berkeley,,,,,,
-closest_cube_root,,,,,,
-closest_square_root,,,,,,
-cohendiv,,,,,,
-consecutive_cubes,,,,,,
-dijkstra_ind,,,,,,
-dijsktra,,,,,,
-euclidex1,,,,,,
-euclidex2,,,,,,
-fermat1,,,,,,
-fermat2_ind,,,,,,
-firefly,,,,,,
-floor_square_root,,,,,,
-friction,,,,,,
-illinois,,,,,,
-lcm1,,,,,,
-mannadiv_Carre,,,,,,
-mannadiv_Cube,,,,,,
-mannadiv_ind,,,,,,
-mesi,,,,,,
-moesi,,,,,,
-petter10,,,,,,
-petter3,,,,,,
-petter5,,,,,,
-polynomial_approx,,,,,,
-positive_square_with_holes,,,,,,
-positive_square_with_number_holes,,,,,,
-readerswriters,,,,,,
-square_roots,,,,,,
-wensley_division,,,,,,
+archimedes, SUCCESS, 2.113, SUCCESS, .755,FAILED, -
+berkeley, SUCCESS, 21.745, SUCCESS, .707,None,None
+closest_cube_root, SUCCESS, 39.385, TIMEOUT, -,SUCCESS,.530
+closest_square_root, SUCCESS, 8.853, SUCCESS, .592,FAILED, -
+cohendiv, SUCCESS, 60.011, SUCCESS, .606,FAILED, -
+consecutive_cubes, SUCCESS, 60.020, TIMEOUT, -,FAILED, -
+dijkstra_ind, SUCCESS, 60.171, TIMEOUT, -,None,None
+dijsktra, SUCCESS, 18.520, TIMEOUT, -,None,None
+euclidex1, SUCCESS, 60.012, SUCCESS, .565,None,None
+euclidex2, SUCCESS, 60.013, SUCCESS, .759,FAILED, -
+fermat1, SUCCESS, 49.163, SUCCESS, .607,FAILED, -
+fermat2_ind, SUCCESS, 23.814, TIMEOUT, -,FAILED, -
+firefly, SUCCESS, 60.069, SUCCESS, 1.061,None,None
+floor_square_root, SUCCESS, 36.021, TIMEOUT, -,SUCCESS,.682
+friction, SUCCESS, 1.814, TIMEOUT, -,FAILED, -
+illinois, SUCCESS, 60.016, TIMEOUT, -,None,None
+lcm1, SUCCESS, 31.539, TIMEOUT, -,FAILED, -
+mannadiv_carre, SUCCESS, 12.777, TIMEOUT, -,FAILED, -
+mannadiv_cube, SUCCESS, 14.631, TIMEOUT, -,FAILED, -
+mannadiv_ind, SUCCESS, 18.813, SUCCESS, .561,FAILED, -
+mesi, SUCCESS, 60.028, SUCCESS, .705,None,None
+moesi, SUCCESS, 60.222, SUCCESS, .971,None,None
+petter10, SUCCESS, 60.078, TIMEOUT, -,None,None
+petter3, SUCCESS, 8.889, TIMEOUT, -,FAILED, -
+petter5, SUCCESS, 4.846, TIMEOUT, -,FAILED, -
+polynomial_approx, SUCCESS, 1.173, SUCCESS, .645,None,None
+positive_square_with_holes, SUCCESS, .691, TIMEOUT, -,SUCCESS,.847
+positive_square_with_number_holes, SUCCESS, .711, TIMEOUT, -,SUCCESS,1.041
+readerswriters, SUCCESS, 60.053, TIMEOUT, -,None,None
+square_roots, SUCCESS, 47.546, TIMEOUT, -,None,None
+wensley_division, SUCCESS, 60.013, TIMEOUT, -,FAILED, -

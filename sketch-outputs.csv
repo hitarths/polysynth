@@ -1,0 +1,24 @@
+Benchmark,Result,Time
+archimedes.sk,FAILED, -
+closest_cube_root.sk,SUCCESS,.530
+closest_square_root.sk,FAILED, -
+cohendiv.sk,FAILED, -
+consecutive_cubes.sk,FAILED, -
+euclidex2.sk,FAILED, -
+fermat1.sk,FAILED, -
+fermat2_ind.sk,FAILED, -
+floor_square_root.sk,SUCCESS,.682
+friction.sk,FAILED, -
+if_else_trivial.sk,SUCCESS,1.024
+lcm1.sk,FAILED, -
+mannadiv_carre.sk,FAILED, -
+mannadiv_cube.sk,FAILED, -
+mannadiv_ind.sk,FAILED, -
+petter3.sk,FAILED, -
+petter5.sk,FAILED, -
+polynomial_approximation.sk,SUCCESS,49.094
+positive_square_with_holes.sk,SUCCESS,.847
+positive_square_with_number_holes.sk,SUCCESS,1.041
+prodbin.sk,SUCCESS,6.961
+square_roots_appro.sk,FAILED, -
+wensley_division.sk,FAILED, -
