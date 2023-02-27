@@ -3,10 +3,10 @@ Benchmark = benchmarks-sketch/archimedes.sk
   UNSATISFIABLE ASSERTION Assert at archimedes.sk:20 (2)
 
 *** Rejected
-    [0;31m[1677507314.5600 - ERROR] [SKETCH] Sketch Not Resolved Error:   UNSATISFIABLE ASSERTION Assert at archimedes.sk:20 (2)
+    [0;31m[1677509536.7300 - ERROR] [SKETCH] Sketch Not Resolved Error:   UNSATISFIABLE ASSERTION Assert at archimedes.sk:20 (2)
 
 *** Rejected
 The sketch could not be resolved.[0m
-    [0;32m[1677507314.5660 - DEBUG] [SKETCH] stack trace written to file: /Users/hitarth/.sketch/tmp/stacktrace.txt[0m
-    [0;32m[1677507314.5670 - DEBUG] Backend solver input file at /Users/hitarth/.sketch/tmp/archimedes.sk/input0.tmp[0m
-Total time = 171
+    [0;32m[1677509536.7380 - DEBUG] [SKETCH] stack trace written to file: /Users/hitarth/.sketch/tmp/stacktrace.txt[0m
+    [0;32m[1677509536.7381 - DEBUG] Backend solver input file at /Users/hitarth/.sketch/tmp/archimedes.sk/input0.tmp[0m
+Total time = 177

@@ -16,9 +16,9 @@ do
 cmd="timeout -k $KILL_TIMEOUT $TIMEOUT racket benchmarks-rosette/$name"
 echo "Running $cmd..."
 
-start_time=`date %s.%3N`
+start_time=`date +%s.%3N`
 output=$(eval $cmd || echo "Timeout")
-end_time=`date %s.%3N`
+end_time=`date +%s.%3N`
 time_taken=`expr $end_time - $start_time`
 
 if [ "$output" == "Timeout" ];
