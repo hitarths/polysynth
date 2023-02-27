@@ -1,6 +1,0 @@
-SKETCH version 1.7.6
-Benchmark = benchmarks-sketch/mannadiv_cube.sk
-benchmarks-sketch/mannadiv_cube.sk:66:1: expecting EOF, found '['
-    [0;31m[1677506512.3630 - ERROR] [SKETCH] Program Parse Error: could not parse program[0m
-    [0;32m[1677506512.3720 - DEBUG] [SKETCH] stack trace written to file: /Users/hitarth/.sketch/tmp/stacktrace.txt[0m
-Total time = 106

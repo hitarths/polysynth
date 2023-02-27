@@ -1,6 +1,0 @@
-SKETCH version 1.7.6
-Benchmark = benchmarks-sketch/square_roots_appro.sk
-benchmarks-sketch/square_roots_appro.sk:26:1: expecting EOF, found 'Benchmark'
-    [0;31m[1677506517.6400 - ERROR] [SKETCH] Program Parse Error: Sketch failed to parse: line 65:20: expecting '\n', found '<EOF>'[0m
-    [0;32m[1677506517.6480 - DEBUG] [SKETCH] stack trace written to file: /Users/hitarth/.sketch/tmp/stacktrace.txt[0m
-Total time = 96

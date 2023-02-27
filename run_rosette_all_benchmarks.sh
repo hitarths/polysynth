@@ -11,7 +11,7 @@ OUTPUT_FILE=rosette-outputs.csv
 
 
 echo "Benchmark,Result,Time (seconds)" > $OUTPUT_FILE, time
-for name in archimedes_principle_real.rkt closes_square_root.rkt closest_cube_root_real.rkt cohendiv.rkt consequitive_cubes.rkt euclidx2.rkt fermat1.rkt fermat2_ind.rkt floor_square_Root.rkt friction.rkt gcd_dijkstra.rkt lcm1.rkt mannadiv_carre.rkt mannadiv_cube.rkt mannadiv_in.rkt petter3.rkt petter5.rkt polynomial_approx.rkt positive_square_with_hole_integers.rkt positive_square_with_hole_reals.rkt.rkt positive_square_with_number_hole_reals.rkt.bak.rkt square_root_floor.rkt wensley_division.rkt
+for name in archimedes.rkt closes_square_root.rkt closest_cube_root_real.rkt cohendiv.rkt consecutive_cubes.rkt euclidx2.rkt fermat1.rkt fermat2_ind.rkt floor_square_Root.rkt friction.rkt gcd_dijkstra.rkt lcm1.rkt mannadiv_carre.rkt mannadiv_cube.rkt mannadiv_in.rkt petter3.rkt petter5.rkt polynomial_approx.rkt positive_square_with_hole_integers.rkt positive_square_with_hole_reals.rkt.rkt positive_square_with_number_hole_reals.rkt.bak.rkt square_root_floor.rkt wensley_division.rkt
 do
 cmd="timeout -k $KILL_TIMEOUT $TIMEOUT racket benchmarks-rosette/$name"
 echo "Running $cmd..."
