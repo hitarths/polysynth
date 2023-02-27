@@ -19,7 +19,7 @@ echo "Running $cmd..."
 start_time=`date +%s.%3N`
 output=$(eval $cmd || echo "Timeout")
 end_time=`date +%s.%3N`
-time_taken=`expr $end_time - $start_time`
+time_taken=`echo $end_time - $start_time | bc`
 
 if [ "$output" == "Timeout" ];
 then
